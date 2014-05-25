@@ -1,0 +1,19 @@
+{
+  "name": "3pjs-skeleton",
+  "description": "A 3rd-party-js-skeleton-app",
+  "version": "0.1.0",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "dependencies": {
+    "requirejs": "", 
+    "requirejs-text": "~2.0.10", 
+    "requirejs-plugins": "", 
+    "requirejs-domready": "", 
+    "require-css": "",
+    "requirejs-initscript": "https://github.com/benignware/requirejs-initscript.git", 
+    "elopts": "https://github.com/benignware/elopts.js.git", 
+    "jquery": "jquery#1.11.1"
+  }
+}
