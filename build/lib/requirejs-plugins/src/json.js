@@ -5,7 +5,7 @@
  * Version: 0.3.1 (2013/02/04)
  * Released under the MIT license
  */
-_3pjsSkeleton.define(['text'], function(text){
+testWidget.define(['text'], function(text){
 
     var CACHE_BUST_QUERY_PARAM = 'bust',
         CACHE_BUST_FLAG = '!bust',

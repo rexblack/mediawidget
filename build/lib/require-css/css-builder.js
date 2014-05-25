@@ -1,4 +1,4 @@
-_3pjsSkeleton.define(['require', './normalize'], function(req, normalize) {
+testWidget.define(['require', './normalize'], function(req, normalize) {
   var cssAPI = {};
   
   var isWindows = !!process.platform.match(/^win/);

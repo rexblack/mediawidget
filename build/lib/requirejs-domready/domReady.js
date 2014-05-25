@@ -9,7 +9,7 @@
   self: false, setInterval: false */
 
 
-_3pjsSkeleton.define(function () {
+testWidget.define(function () {
     
 
     var isTop, testDiv, scrollIntervalId,

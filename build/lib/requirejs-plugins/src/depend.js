@@ -5,7 +5,7 @@
  * Version: 0.1.0 (2011/12/13)
  * Released under the MIT license
  */
-_3pjsSkeleton.define(function () {
+testWidget.define(function () {
 
     var rParts = /^(.*)\[([^\]]*)\]$/;
 

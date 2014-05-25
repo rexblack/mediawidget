@@ -1,5 +1,5 @@
-var _3pjsSkeleton;(function () { if (!_3pjsSkeleton || !_3pjsSkeleton.requirejs) {
-if (!_3pjsSkeleton) { _3pjsSkeleton = {}; } else { require = _3pjsSkeleton; }
+var testWidget;(function () { if (!testWidget || !testWidget.requirejs) {
+if (!testWidget) { testWidget = {}; } else { require = testWidget; }
 /** vim: et:ts=4:sw=4:sts=4
  * @license RequireJS 2.1.11 Copyright (c) 2010-2014, The Dojo Foundation All Rights Reserved.
  * Available via the MIT or new BSD license.
@@ -1740,7 +1740,7 @@ var requirejs, require, define;
     };
 
     /**
-     * Support _3pjsSkeleton.require.config() to make it easier to cooperate with other
+     * Support testWidget.require.config() to make it easier to cooperate with other
      * AMD loaders on globally agreed names.
      */
     req.config = function (config) {
@@ -2069,10 +2069,10 @@ var requirejs, require, define;
     req(cfg);
 }(this));
 
-_3pjsSkeleton.requirejs = requirejs;_3pjsSkeleton.require = require;_3pjsSkeleton.define = define;
+testWidget.requirejs = requirejs;testWidget.require = require;testWidget.define = define;
 }
 }());
-_3pjsSkeleton.define("requireLib", function(){});
+testWidget.define("requireLib", function(){});
 
 var elopts = (function() {
   
@@ -2260,7 +2260,7 @@ var elopts = (function() {
   }
   
   try {
-    _3pjsSkeleton.define('elopts',[],function() {
+    testWidget.define('elopts',[],function() {
       return newInstance();
     });
   } catch (e) {}
@@ -12539,8 +12539,8 @@ jQuery.fn.andSelf = jQuery.fn.addBack;
 // AMD loader is present. jQuery is a special case. For more information, see
 // https://github.com/jrburke/requirejs/wiki/Updating-existing-libraries#wiki-anon
 
-if ( typeof _3pjsSkeleton.define === 'function' && _3pjsSkeleton.define.amd ) {
-	_3pjsSkeleton.define( "jquery", [], function() {
+if ( typeof testWidget.define === 'function' && testWidget.define.amd ) {
+	testWidget.define( "jquery", [], function() {
 		return jQuery;
 	});
 }
@@ -12619,7 +12619,7 @@ for (var x in globals['public']) {
  *
  */
 
-_3pjsSkeleton.define('normalize',[],function() {
+testWidget.define('normalize',[],function() {
   
   // regular expression for removing double slashes
   // eg http://www.example.com//my///url/here -> http://www.example.com/my/url/here
@@ -12759,7 +12759,7 @@ _3pjsSkeleton.define('normalize',[],function() {
  *
  */
 
-_3pjsSkeleton.define('css',[],function() {
+testWidget.define('css',[],function() {
   if (typeof window == 'undefined')
     return { load: function(n, r, load){ load() } };
 
@@ -12889,8 +12889,8 @@ _3pjsSkeleton.define('css',[],function() {
 });
 
 
-_3pjsSkeleton.define('css!style/main',[],function(){});
-_3pjsSkeleton.define('app',['jquery', 'css!style/main.css'], function($) {
+testWidget.define('css!style/main',[],function(){});
+testWidget.define('app',['jquery', 'css!style/main.css'], function($) {
   
   // you may use $ in here
   function App(element, options) {
@@ -12913,7 +12913,7 @@ _3pjsSkeleton.define('app',['jquery', 'css!style/main.css'], function($) {
   };
 
     //Main module definition.
-  _3pjsSkeleton.define('initscript',['require', 'module'], function(req, module) {
+  testWidget.define('initscript',['require', 'module'], function(req, module) {
     
     // holds already initialized scripts
     var initialized = [];
@@ -12997,11 +12997,11 @@ _3pjsSkeleton.define('app',['jquery', 'css!style/main.css'], function($) {
 (function() {
   
   /*
-   * 3pjs skeleton
+   * Test widget
    * 0.1.0
    */
   
-  _3pjsSkeleton.require.config(
+  testWidget.require.config(
     {
       baseUrl: '.', 
       paths: {
@@ -13016,14 +13016,14 @@ _3pjsSkeleton.define('app',['jquery', 'css!style/main.css'], function($) {
       config: {
         initscript: {
           // filename of executing requirejs-bundle
-          name: "3pjs-skeleton"
+          name: "test-widget"
         }
       }
     }
   );
   
   // need to wrap initscript into a static require call to get it work with optimizer namespace option
-  _3pjsSkeleton.require(['require', 'elopts', 'app', 'initscript'], function(require, elopts, App) {
+  testWidget.require(['require', 'elopts', 'app', 'initscript'], function(require, elopts, App) {
     
     // cache-bust the src to make it call every time the script executes
     require(['initscript!' + new Date().getTime() + Math.random() * 10000000000000000], function(initscript) {
@@ -13031,7 +13031,7 @@ _3pjsSkeleton.define('app',['jquery', 'css!style/main.css'], function($) {
       // bootstrap app
       var options = elopts(initscript);
       var element = document.createElement('div');
-      element.className = "_3pjs-skeleton";
+      element.className = "test-widget";
       initscript.parentNode.insertBefore(element, initscript);
       var app = new App(element, options);
       
@@ -13043,10 +13043,10 @@ _3pjsSkeleton.define('app',['jquery', 'css!style/main.css'], function($) {
   
   
 })();
-_3pjsSkeleton.define("main", function(){});
+testWidget.define("main", function(){});
 
 
 (function(c){var d=document,a='appendChild',i='styleSheet',s=d.createElement('style');s.type='text/css';d.getElementsByTagName('head')[0][a](s);s[i]?s[i].cssText=c:s[a](d.createTextNode(c));})
-('._3pjs-skeleton div{color:green}');
+('.test-widget div{color:green}');
 
-_3pjsSkeleton.define("3pjs-skeleton", function(){});
+testWidget.define("test-widget", function(){});

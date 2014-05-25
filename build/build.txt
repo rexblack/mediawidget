@@ -3,7 +3,7 @@ style/main.css
 ----------------
 style/main.css
 
-3pjs-skeleton.js
+test-widget.js
 ----------------
 lib/requirejs/require.js
 lib/elopts/build/elopts.js

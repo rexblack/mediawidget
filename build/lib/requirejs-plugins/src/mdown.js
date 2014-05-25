@@ -9,7 +9,7 @@
 // the build, precompile them into modules and set
 // `pragmasOnSave.excludeMdown=true`
 
-_3pjsSkeleton.define(
+testWidget.define(
     [
         'text',
         'markdownConverter'

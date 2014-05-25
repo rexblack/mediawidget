@@ -8,7 +8,7 @@
   define, window, process, Packages,
   java, location, Components, FileUtils */
 
-_3pjsSkeleton.define(['module'], function (module) {
+testWidget.define(['module'], function (module) {
     
 
     var text, fs, Cc, Ci, xpcIsWindows,
