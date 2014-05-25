@@ -4,7 +4,7 @@
  * Version: 0.2.0 (2011/12/06)
  * Released under the MIT license
  */
-testWidget.define(['propertyParser'], function (propertyParser) {
+mediawidget.define(['propertyParser'], function (propertyParser) {
 
     var rParts = /^([^,]+),([^\|]+)\|?/;
 

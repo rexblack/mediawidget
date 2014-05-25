@@ -4,7 +4,7 @@
  * Version: 0.2.0 (2011/12/06)
  * Released under the MIT license
  */
-testWidget.define(['async', 'propertyParser'], function (async, propertyParser) {
+mediawidget.define(['async', 'propertyParser'], function (async, propertyParser) {
 
     var rParts = /^([^,]+)(?:,([^,]+))?(?:,(.+))?/;
 

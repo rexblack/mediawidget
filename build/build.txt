@@ -3,7 +3,7 @@ style/main.css
 ----------------
 style/main.css
 
-test-widget.js
+mediawidget.js
 ----------------
 lib/requirejs/require.js
 lib/elopts/build/elopts.js

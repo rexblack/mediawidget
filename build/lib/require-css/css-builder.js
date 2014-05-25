@@ -1,4 +1,4 @@
-testWidget.define(['require', './normalize'], function(req, normalize) {
+mediawidget.define(['require', './normalize'], function(req, normalize) {
   var cssAPI = {};
   
   var isWindows = !!process.platform.match(/^win/);

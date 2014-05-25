@@ -6,7 +6,7 @@
  * Version: 0.3.1 (2011/12/07)
  * Released under the MIT license
  */
-testWidget.define(function(){
+mediawidget.define(function(){
 
     var QUERY_PARAM = 'noext';
 

@@ -8,7 +8,7 @@
   define, window, process, Packages,
   java, location, Components, FileUtils */
 
-testWidget.define(['module'], function (module) {
+mediawidget.define(['module'], function (module) {
     
 
     var text, fs, Cc, Ci, xpcIsWindows,

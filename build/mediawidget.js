@@ -1,5 +1,5 @@
-var testWidget;(function () { if (!testWidget || !testWidget.requirejs) {
-if (!testWidget) { testWidget = {}; } else { require = testWidget; }
+var mediawidget;(function () { if (!mediawidget || !mediawidget.requirejs) {
+if (!mediawidget) { mediawidget = {}; } else { require = mediawidget; }
 /** vim: et:ts=4:sw=4:sts=4
  * @license RequireJS 2.1.11 Copyright (c) 2010-2014, The Dojo Foundation All Rights Reserved.
  * Available via the MIT or new BSD license.
@@ -1740,7 +1740,7 @@ var requirejs, require, define;
     };
 
     /**
-     * Support testWidget.require.config() to make it easier to cooperate with other
+     * Support mediawidget.require.config() to make it easier to cooperate with other
      * AMD loaders on globally agreed names.
      */
     req.config = function (config) {
@@ -2069,10 +2069,10 @@ var requirejs, require, define;
     req(cfg);
 }(this));
 
-testWidget.requirejs = requirejs;testWidget.require = require;testWidget.define = define;
+mediawidget.requirejs = requirejs;mediawidget.require = require;mediawidget.define = define;
 }
 }());
-testWidget.define("requireLib", function(){});
+mediawidget.define("requireLib", function(){});
 
 var elopts = (function() {
   
@@ -2260,7 +2260,7 @@ var elopts = (function() {
   }
   
   try {
-    testWidget.define('elopts',[],function() {
+    mediawidget.define('elopts',[],function() {
       return newInstance();
     });
   } catch (e) {}
@@ -12539,8 +12539,8 @@ jQuery.fn.andSelf = jQuery.fn.addBack;
 // AMD loader is present. jQuery is a special case. For more information, see
 // https://github.com/jrburke/requirejs/wiki/Updating-existing-libraries#wiki-anon
 
-if ( typeof testWidget.define === 'function' && testWidget.define.amd ) {
-	testWidget.define( "jquery", [], function() {
+if ( typeof mediawidget.define === 'function' && mediawidget.define.amd ) {
+	mediawidget.define( "jquery", [], function() {
 		return jQuery;
 	});
 }
@@ -12619,7 +12619,7 @@ for (var x in globals['public']) {
  *
  */
 
-testWidget.define('normalize',[],function() {
+mediawidget.define('normalize',[],function() {
   
   // regular expression for removing double slashes
   // eg http://www.example.com//my///url/here -> http://www.example.com/my/url/here
@@ -12759,7 +12759,7 @@ testWidget.define('normalize',[],function() {
  *
  */
 
-testWidget.define('css',[],function() {
+mediawidget.define('css',[],function() {
   if (typeof window == 'undefined')
     return { load: function(n, r, load){ load() } };
 
@@ -12889,8 +12889,8 @@ testWidget.define('css',[],function() {
 });
 
 
-testWidget.define('css!style/main',[],function(){});
-testWidget.define('app',['jquery', 'css!style/main.css'], function($) {
+mediawidget.define('css!style/main',[],function(){});
+mediawidget.define('app',['jquery', 'css!style/main.css'], function($) {
   
   // you may use $ in here
   function App(element, options) {
@@ -12913,7 +12913,7 @@ testWidget.define('app',['jquery', 'css!style/main.css'], function($) {
   };
 
     //Main module definition.
-  testWidget.define('initscript',['require', 'module'], function(req, module) {
+  mediawidget.define('initscript',['require', 'module'], function(req, module) {
     
     // holds already initialized scripts
     var initialized = [];
@@ -12997,11 +12997,11 @@ testWidget.define('app',['jquery', 'css!style/main.css'], function($) {
 (function() {
   
   /*
-   * Test widget
+   * Mediawidget
    * 0.1.0
    */
   
-  testWidget.require.config(
+  mediawidget.require.config(
     {
       baseUrl: '.', 
       paths: {
@@ -13016,14 +13016,14 @@ testWidget.define('app',['jquery', 'css!style/main.css'], function($) {
       config: {
         initscript: {
           // filename of executing requirejs-bundle
-          name: "test-widget"
+          name: "mediawidget"
         }
       }
     }
   );
   
   // need to wrap initscript into a static require call to get it work with optimizer namespace option
-  testWidget.require(['require', 'elopts', 'app', 'initscript'], function(require, elopts, App) {
+  mediawidget.require(['require', 'elopts', 'app', 'initscript'], function(require, elopts, App) {
     
     // cache-bust the src to make it call every time the script executes
     require(['initscript!' + new Date().getTime() + Math.random() * 10000000000000000], function(initscript) {
@@ -13031,7 +13031,7 @@ testWidget.define('app',['jquery', 'css!style/main.css'], function($) {
       // bootstrap app
       var options = elopts(initscript);
       var element = document.createElement('div');
-      element.className = "test-widget";
+      element.className = "mediawidget";
       initscript.parentNode.insertBefore(element, initscript);
       var app = new App(element, options);
       
@@ -13043,10 +13043,10 @@ testWidget.define('app',['jquery', 'css!style/main.css'], function($) {
   
   
 })();
-testWidget.define("main", function(){});
+mediawidget.define("main", function(){});
 
 
 (function(c){var d=document,a='appendChild',i='styleSheet',s=d.createElement('style');s.type='text/css';d.getElementsByTagName('head')[0][a](s);s[i]?s[i].cssText=c:s[a](d.createTextNode(c));})
-('.test-widget div{color:green}');
+('.mediawidget div{color:green}');
 
-testWidget.define("test-widget", function(){});
+mediawidget.define("mediawidget", function(){});

@@ -9,7 +9,7 @@
 // the build, precompile them into modules and set
 // `pragmasOnSave.excludeMdown=true`
 
-testWidget.define(
+mediawidget.define(
     [
         'text',
         'markdownConverter'

@@ -9,7 +9,7 @@
   self: false, setInterval: false */
 
 
-testWidget.define(function () {
+mediawidget.define(function () {
     
 
     var isTop, testDiv, scrollIntervalId,

@@ -1,4 +1,4 @@
-3pjs-skeleton
+mediawidget
 =============
 
-A 3rd-party-js-skeleton-app using requirejs
+A 3pjs-mediaplayer.
