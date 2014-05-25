@@ -1,0 +1,33 @@
+{
+  "browser": true, 
+  "curly"   : true,
+  "eqeqeq"  : true,
+  "immed"   : true,
+  "latedef" : true,
+  "newcap"  : true,
+  "noarg"   : true,
+  "sub"     : true,
+  "undef"   : true,
+  "boss"    : true,
+  "eqnull"  : true,
+  "node"    : true,
+  "globals" : {
+    "it"         : false,
+    "xit"        : false,
+    "describe"   : false, 
+    "define": false, 
+    "xdescribe"  : false,
+    "beforeEach" : false,
+    "afterEach"  : false,
+    "expect"     : false,
+    "spyOn"      : false, 
+     "$":false,
+    "jquery":false,
+    "console":false,
+    "require":false,
+    "process":false,
+    "__dirname":false,
+    "exports":false,
+    "angular":false
+  }
+}

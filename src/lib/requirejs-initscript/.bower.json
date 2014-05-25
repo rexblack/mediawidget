@@ -1,0 +1,13 @@
+{
+  "name": "requirejs-initscript",
+  "homepage": "https://github.com/benignware/requirejs-initscript",
+  "_release": "4022226a70",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "4022226a708283aa7434666006a883a0679379f6"
+  },
+  "_source": "https://github.com/benignware/requirejs-initscript.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/benignware/requirejs-initscript.git"
+}
