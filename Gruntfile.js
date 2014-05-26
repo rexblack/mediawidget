@@ -5,7 +5,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'), 
     string: require('string'), 
-    bundle_name: "player", 
+    bundle_name: "p", 
     bundle_namespace: "<%= string(pkg.name).camelize().replace(/^([\\d]+)/, '_$1') %>", 
     css_name: "<%= string(pkg.name).slugify().replace(/^([\\d]+)/, '_$1') %>", 
     copy: {
@@ -128,7 +128,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'build/<%= bundle_name %>.min.js': ['<%= requirejs.compile.options.dir %>/<%= bundle_name %>.js']
+          'build/<%= bundle_name %>.js': ['<%= requirejs.compile.options.dir %>/<%= bundle_name %>.js']
         }
       }
     }, 

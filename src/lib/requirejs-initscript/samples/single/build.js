@@ -8,6 +8,23 @@
     }
     return false;
   };
+  
+  
+  function cleanSrc(string) {
+    if (string) {
+      string = string.replace(/^(.\/)/, "");
+      string = string.replace(/\/$/, '');
+      var origin = (window.location.protocol + "\/\/" + window.location.host + window.location.pathname).replace(/\\/g, '/');
+      if (origin.substring(origin.length - 1, 1) != "/") {
+        var a = origin.split('/');
+        a.pop();
+        origin = a.join("/");
+      }
+      string = string.replace(new RegExp("\^\(" + origin + "\)", "ig"), '');
+      string = string.split("?")[0];
+    }
+    return string;
+  }
 
     //Main module definition.
   define('initscript',['require', 'module'], function(req, module) {
@@ -15,22 +32,30 @@
     // holds already initialized scripts
     var initialized = [];
   
-    var baseUrl = req.toUrl('');
+    
+    
     
     function matchScripts(name) {
       
       var matches = [];
       var scripts = document.getElementsByTagName('script');
       
-      var filename = baseUrl + name + ".js";
-      filename = filename.replace(/^(.\/)/, "");
+      var baseUrl = cleanSrc(req.toUrl(''));
+      var filename = baseUrl ? baseUrl + "/" + name + ".js" : name + ".js";
       
       for (var i = 0, script; script = scripts[i]; i++) {
         
-        var match = null;
-        if (filename == script.getAttribute('data-main')) {
+        var match = null, src = null;
+        
+        src = cleanSrc(script.getAttribute('data-main'));
+        
+        if (filename == src) {
           match = script;
-        } else if (filename == script.getAttribute('src')) {
+        }
+        
+        src = cleanSrc(script.getAttribute('src'));
+        
+        if (filename == src) {
           match = script;
         }
         
@@ -72,6 +97,7 @@
             
             // match current script
             var matches = matchScripts(name);
+            
             for (var i = 0, match; match = matches[i]; i++) {
               if (!(!!~initialized.indexOf(match))) {
                 result = match;
@@ -82,6 +108,7 @@
         }
         
         initialized.push(result);
+        
         onload(result);
 
       }

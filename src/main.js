@@ -7,7 +7,7 @@
   
   require.config(
     {
-      baseUrl: 'http://dev.benignware.com/3pjs/mediawidget', 
+      baseUrl: 'http://3pjs.benignware.com/mediawidget/', 
       paths: {
         initscript: 'lib/requirejs-initscript/build/initscript', 
         css: 'lib/require-css/css', 
@@ -36,7 +36,7 @@
   });
   
   // need to wrap initscript into a static require call to get it work with optimizer namespace option
-  require(['require', 'elopts', 'app', 'initscript'], function(require, elopts, App) {
+  require(['require', 'elopts', 'app', 'domReady!', 'initscript'], function(require, elopts, App) {
     
     // cache-bust the src to make it call every time the script executes
     require(['initscript!' + new Date().getTime() + Math.random() * 10000000000000000], function(initscript) {

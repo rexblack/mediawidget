@@ -11,7 +11,7 @@ lib/mediaelement/build/mejs-skins.css
 ----------------
 lib/mediaelement/build/mejs-skins.css
 
-player.js
+p.js
 ----------------
 lib/requirejs/require.js
 lib/elopts/build/elopts.js
@@ -21,5 +21,7 @@ lib/require-css/normalize.js
 lib/require-css/css.js
 css!lib/mediaelement/build/mediaelementplayer
 app.js
+lib/requirejs-domready/domReady.js
+domReady!
 lib/requirejs-initscript/build/initscript.js
 main.js

@@ -5,18 +5,21 @@ define(['jquery', 'mejs'], function($, mejs) {
     // init app
     //
     var mediaelement = document.createElement('video');
-   
+    $(mediaelement).attr('id', 'player');
+    
     var source = document.createElement('source');
     if (options.type) {
       // for hls: 'application/x-mpegURL' 
       source.setAttribute('type', options.type);
     }
-    
-    source.setAttribute('src', options.src);
+
+    mediaelement.setAttribute('src', options.src);
     
     mediaelement.appendChild(source);
     
     $(element).append(mediaelement);
+    
+    options.src = undefined;
     
     var player1 = new mejs.MediaElementPlayer(mediaelement, options);
     
