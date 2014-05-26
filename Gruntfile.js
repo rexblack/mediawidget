@@ -5,7 +5,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'), 
     string: require('string'), 
-    bundle_name: "<%= string(pkg.name).slugify() %>", 
+    bundle_name: "player", 
     bundle_namespace: "<%= string(pkg.name).camelize().replace(/^([\\d]+)/, '_$1') %>", 
     css_name: "<%= string(pkg.name).slugify().replace(/^([\\d]+)/, '_$1') %>", 
     copy: {
@@ -26,6 +26,8 @@ module.exports = function(grunt) {
           '!lib/**/examples/**',  
           '!lib/**/src/**', 
           '!lib/**/lib/**', 
+          '!lib/**/demo/**',  
+          '!lib/**/test/**', 
           '!lib/**/spec/**', 
           '!lib/**/vendor/**', 
           'lib/requirejs-plugins/src/**'
@@ -34,6 +36,18 @@ module.exports = function(grunt) {
         expand: true
       }
     }, 
+    css_datauri: {
+      compile: {
+        files: [
+          {
+            expand: true, 
+            cwd: 'tmp', 
+            src: ['**/*.css'], 
+            dest: 'tmp'
+          }
+        ]
+      }
+    },
     css_wrap: {
       compile: {
         files: [
@@ -55,6 +69,17 @@ module.exports = function(grunt) {
         dest: 'tmp/lib/jquery/dist/jquery.js', 
         options: { 
           global: ['$', 'jQuery']
+        }
+      }, 
+      mediaelement: {
+        src: 'tmp/lib/mediaelement/build/mediaelement-and-player.js', 
+        dest: 'tmp/lib/mediaelement/build/mediaelement-and-player.js', 
+        options: {
+          dep: {
+            jquery: '$'
+          }, 
+          globals: {'mejs': 'mejs_mediawidget', 'MediaElement': ''}, 
+          exports: 'mejs'
         }
       }
     },
@@ -129,10 +154,11 @@ module.exports = function(grunt) {
   grunt.registerTask('default', [
     'clean:tmp', 
     'copy:compile', 
-    'amd_shim:jquery', 
+    'amd_shim', 
     'css_wrap:compile', 
+    'css_datauri', 
     'requirejs:compile',
     'uglify',  
-    'clean:tmp'
+    //'clean:tmp'
   ]);
 };

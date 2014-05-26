@@ -7,7 +7,7 @@
   
   require.config(
     {
-      baseUrl: '.', 
+      baseUrl: 'http://dev.benignware.com/3pjs/mediawidget', 
       paths: {
         initscript: 'lib/requirejs-initscript/build/initscript', 
         css: 'lib/require-css/css', 
@@ -15,7 +15,8 @@
         'css-builder': 'lib/require-css/css-builder', 
         domReady: 'lib/requirejs-domready/domReady', 
         elopts: 'lib/elopts/build/elopts', 
-        jquery: 'lib/jquery/dist/jquery'
+        jquery: 'lib/jquery/dist/jquery', 
+        mediaelement: 'lib/mediaelement/build/mediaelement-and-player' 
       }, 
       config: {
         initscript: {
@@ -25,6 +26,14 @@
       }
     }
   );
+  
+  define('mejs', ['require', 'mediaelement', 'css!lib/mediaelement/build/mediaelementplayer'], function(require, mejs) {
+    
+    mejs.MediaElementDefaults.pluginVars = "bridge=mejs_mediawidget.MediaPluginBridge";
+    mejs.MediaElementDefaults.pluginPath = require.toUrl('lib/mediaelement/build/');
+    
+    return mejs;
+  });
   
   // need to wrap initscript into a static require call to get it work with optimizer namespace option
   require(['require', 'elopts', 'app', 'initscript'], function(require, elopts, App) {

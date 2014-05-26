@@ -14,6 +14,7 @@
     "require-css": "",
     "requirejs-initscript": "https://github.com/benignware/requirejs-initscript.git", 
     "elopts": "https://github.com/benignware/elopts.js.git", 
-    "jquery": "jquery#1.11.1"
+    "jquery": "jquery#1.11.1", 
+    "mediaelement": "https://github.com/rexblack/mediaelement.git#master"
   }
 }

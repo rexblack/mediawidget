@@ -1,0 +1,1209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>/Users/aphorisme/Documents/Projekte/Audioguide.me/Workspace/mediaelement-hls/mediaelement/.README.md.html</title>
+
+
+<style type="text/css">
+body {
+	color: #333;
+	font: 13px/1.4 Helvetica,arial,freesans,clean,sans-serif;
+}
+
+.markdown-body {
+    border: 1px solid #CACACA;
+    padding: 30px;
+    font-size: 15px;
+    line-height: 1.7;
+    word-wrap: break-word;
+}
+.markdown-body > *:first-child {
+    margin-top: 0 !important;
+}
+.markdown-body > *:last-child {
+    margin-bottom: 0 !important;
+}
+.markdown-body a.absent {
+    color: #C00;
+}
+.markdown-body a.anchor {
+    bottom: 0;
+    cursor: pointer;
+    display: block;
+    left: 0;
+    margin-left: -30px;
+    padding-left: 30px;
+    padding-right: 6px;
+    position: absolute;
+    top: 0;
+}
+.markdown-body a.anchor:focus {
+    outline: medium none;
+}
+.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6 {
+    cursor: text;
+    font-weight: bold;
+    line-height: 1.7;
+    margin: 1em 0 15px;
+    padding: 0;
+    position: relative;
+}
+
+.markdown-body h1 .octicon-link, .markdown-body h2 .octicon-link, .markdown-body h3 .octicon-link, .markdown-body h4 .octicon-link, .markdown-body h5 .octicon-link, .markdown-body h6 .octicon-link {
+    color: #000;
+    display: none;
+}
+.markdown-body h1:hover a.anchor, .markdown-body h2:hover a.anchor, .markdown-body h3:hover a.anchor, .markdown-body h4:hover a.anchor, .markdown-body h5:hover a.anchor, .markdown-body h6:hover a.anchor {
+    line-height: 1;
+    margin-left: -22px;
+    padding-left: 0;
+    text-decoration: none;
+    top: 15%;
+}
+.markdown-body h1:hover a.anchor .octicon-link, .markdown-body h2:hover a.anchor .octicon-link, .markdown-body h3:hover a.anchor .octicon-link, .markdown-body h4:hover a.anchor .octicon-link, .markdown-body h5:hover a.anchor .octicon-link, .markdown-body h6:hover a.anchor .octicon-link {
+    display: inline-block;
+}
+.markdown-body h1 tt, .markdown-body h1 code, .markdown-body h2 tt, .markdown-body h2 code, .markdown-body h3 tt, .markdown-body h3 code, .markdown-body h4 tt, .markdown-body h4 code, .markdown-body h5 tt, .markdown-body h5 code, .markdown-body h6 tt, .markdown-body h6 code {
+    font-size: inherit;
+}
+.markdown-body h1 {
+    border-bottom: 1px solid #DDD;
+    font-size: 2.5em;
+}
+.markdown-body h2 {
+    border-bottom: 1px solid #EEE;
+    font-size: 2em;
+}
+.markdown-body h3 {
+    font-size: 1.5em;
+}
+.markdown-body h4 {
+    font-size: 1.2em;
+}
+.markdown-body h5 {
+    font-size: 1em;
+}
+.markdown-body h6 {
+    color: #777;
+    font-size: 1em;
+}
+.markdown-body p, .markdown-body blockquote, .markdown-body ul, .markdown-body ol, .markdown-body dl, .markdown-body table, .markdown-body pre {
+    margin: 15px 0;
+}
+.markdown-body ul, .markdown-body ol {
+    padding-left: 30px;
+}
+.markdown-body ul.no-list, .markdown-body ol.no-list {
+    list-style-type: none;
+    padding: 0;
+}
+.markdown-body ul ul, .markdown-body ul ol, .markdown-body ol ol, .markdown-body ol ul {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.markdown-body dl {
+    padding: 0;
+}
+.markdown-body dl dt {
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 0;
+}
+.markdown-body dl dd {
+    margin-bottom: 15px;
+    padding: 0 15px;
+}
+.markdown-body blockquote {
+    border-left: 4px solid #DDD;
+    color: #777;
+    padding: 0 15px;
+}
+.markdown-body blockquote > *:first-child {
+    margin-top: 0;
+}
+.markdown-body blockquote > *:last-child {
+    margin-bottom: 0;
+}
+.markdown-body table {
+    display: block;
+    overflow: auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+.markdown-body table th {
+    font-weight: bold;
+}
+.markdown-body table th, .markdown-body table td {
+    border: 1px solid #DDD;
+    padding: 6px 13px;
+}
+.markdown-body table tr {
+    background-color: #FFF;
+    border-top: 1px solid #CCC;
+}
+.markdown-body table tr:nth-child(2n) {
+    background-color: #F8F8F8;
+}
+.markdown-body img {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: 100%;
+    border: 0px;
+}
+.markdown-body span.frame {
+    display: block;
+    overflow: hidden;
+}
+.markdown-body span.frame > span {
+    border: 1px solid #DDD;
+    display: block;
+    float: left;
+    margin: 13px 0 0;
+    overflow: hidden;
+    padding: 7px;
+    width: auto;
+}
+.markdown-body span.frame span img {
+    display: block;
+    float: left;
+}
+.markdown-body span.frame span span {
+    clear: both;
+    color: #333;
+    display: block;
+    padding: 5px 0 0;
+}
+.markdown-body span.align-center {
+    clear: both;
+    display: block;
+    overflow: hidden;
+}
+.markdown-body span.align-center > span {
+    display: block;
+    margin: 13px auto 0;
+    overflow: hidden;
+    text-align: center;
+}
+.markdown-body span.align-center span img {
+    margin: 0 auto;
+    text-align: center;
+}
+.markdown-body span.align-right {
+    clear: both;
+    display: block;
+    overflow: hidden;
+}
+.markdown-body span.align-right > span {
+    display: block;
+    margin: 13px 0 0;
+    overflow: hidden;
+    text-align: right;
+}
+.markdown-body span.align-right span img {
+    margin: 0;
+    text-align: right;
+}
+.markdown-body span.float-left {
+    display: block;
+    float: left;
+    margin-right: 13px;
+    overflow: hidden;
+}
+.markdown-body span.float-left span {
+    margin: 13px 0 0;
+}
+.markdown-body span.float-right {
+    display: block;
+    float: right;
+    margin-left: 13px;
+    overflow: hidden;
+}
+.markdown-body span.float-right > span {
+    display: block;
+    margin: 13px auto 0;
+    overflow: hidden;
+    text-align: right;
+}
+.markdown-body code, .markdown-body tt {
+    background-color: #F8F8F8;
+    border: 1px solid #DDD;
+    border-radius: 3px;
+    margin: 0 2px;
+    padding: 0 5px;
+}
+.markdown-body code {
+    white-space: nowrap;
+}
+.markdown-body pre > code {
+    border: medium none;
+    margin: 0;
+    padding: 0;
+    white-space: pre;
+}
+.markdown-body .highlight pre, .markdown-body pre {
+    background-color: #F8F8F8;
+    border: 1px solid #DDD;
+    border-radius: 3px;
+    font-size: 13px;
+    line-height: 19px;
+    overflow: auto;
+    padding: 6px 10px;
+}
+.markdown-body pre code, .markdown-body pre tt {
+    border: medium none;
+    margin: 0;
+    padding: 0;
+    word-wrap: normal;
+}
+
+pre, code, tt {
+    font-family: Consolas,"Liberation Mono",Courier,monospace;
+    font-size: 12px;
+}
+
+.highlight {
+    background: #FFF;
+}
+.highlight .k,
+.highlight .o,
+.highlight .cp,
+.highlight .cs,
+.highlight .gs,
+.highlight .gu,
+.highlight .kc,
+.highlight .kd,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr,
+.highlight .kt,
+.highlight .nc,
+.highlight .ne,
+.highlight .nf,
+.highlight .ow {
+    font-weight: bold;
+}
+.highlight .gd,
+.highlight .gd .x,
+.highlight .gi,
+.highlight .gi .x,
+.type-csharp .highlight .nf,
+.type-csharp .highlight .nn {
+    color: #000;
+}
+.highlight .c,
+.highlight .cm,
+.highlight .c1 {
+    color: #998;
+    font-style: italic;
+}
+.highlight .err {
+    background-color: #E3D2D2;
+    color: #A61717;
+}
+.highlight .cp,
+.highlight .cs {
+    color: #999;
+}
+.highlight .cs,
+.highlight .ge {
+    font-style: italic;
+}
+.highlight .gd {
+    background-color: #FDD;
+}
+.highlight .gd .x {
+    background-color: #FAA;
+}
+.highlight .gr,
+.highlight .gt {
+    color: #A00;
+}
+.highlight .gh {
+    color: #999;
+}
+.highlight .gi {
+    background-color: #DFD;
+}
+.highlight .gi .x {
+    background-color: #AFA;
+}
+.highlight .go {
+    color: #888;
+}
+.highlight .gp,
+.highlight .nn {
+    color: #555;
+}
+.highlight .gu,
+.highlight .ni {
+    color: #800080;
+}
+.highlight .kt {
+    color: #458;
+}
+.highlight .m {
+    color: #099;
+}
+.highlight .s {
+    color: #D14;
+}
+.highlight .n {
+    color: #333;
+}
+.highlight .na,
+.highlight .no,
+.highlight .nv,
+.highlight .vc,
+.highlight .vg,
+.highlight .vi {
+    color: #008080;
+}
+.highlight .nb {
+    color: #0086B3;
+}
+.highlight .nc {
+    color: #458;
+}
+.highlight .ne,
+.highlight .nf {
+    color: #900;
+}
+.highlight .nt {
+    color: #000080;
+}
+.highlight .w {
+    color: #BBB;
+}
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .mo {
+    color: #099;
+}
+.highlight .sb,
+.highlight .sc,
+.highlight .sd,
+.highlight .s2,
+.highlight .se,
+.highlight .sh,
+.highlight .si,
+.highlight .sx,
+.highlight .s1 {
+    color: #D14;
+}
+.highlight .sr {
+    color: #009926;
+}
+.highlight .ss {
+    color: #990073;
+}
+.highlight .bp {
+    color: #999;
+}
+.highlight .il {
+    color: #099;
+}
+.highlight .gc {
+    background-color: #EAF2F5;
+    color: #999;
+}
+.type-csharp .highlight .k,
+.type-csharp .highlight .kt {
+    color: #00F;
+}
+.type-csharp .highlight .nf {
+    font-weight: normal;
+}
+.type-csharp .highlight .nc {
+    color: #2B91AF;
+}
+.type-csharp .highlight .s,
+.type-csharp .highlight .sc {
+    color: #A31515;
+}
+
+</style>
+
+
+<script type="text/javascript">
+
+function getDocumentScrollTop() 
+{
+   var res = document.body.scrollTop || document.documentElement.scrollTop || window.pageYOffset || 0;
+   // alert(res);
+   return res;
+}
+
+function setDocumentScrollTop(ypos) 
+{
+	window.scrollTo(0, ypos);
+}
+
+</script>
+
+
+</head>
+<body class="markdown-body">
+<h1> <a name="user-content-video-and-audio-made-easy" class="anchor" href="..md.html#video-and-audio-made-easy"><span class="octicon octicon-link"></span></a> <code>&lt;video&gt;</code> and <code>&lt;audio&gt;</code> made easy.</h1> 
+<p>One file. Any browser. Same UI.</p> 
+<ul> 
+ <li>Author: John Dyer <a href="http://j.hn/">http://j.hn/</a> </li> 
+ <li>Website: <a href="http://mediaelementjs.com/">http://mediaelementjs.com/</a> </li> 
+ <li>License: MIT</li> 
+ <li>Meaning: Use everywhere, keep copyright, it'd be swell if you'd link back here.</li> 
+ <li>Thanks: my employer, <a href="http://www.dts.edu/">Dallas Theological Seminary</a> </li> 
+ <li>Contributors: <a href="https://github.com/mikesten">mikesten</a>, <a href="https://github.com/sylvinus">sylvinus</a>, <a href="https://github.com/mattfarina">mattfarina</a>, <a href="https://github.com/romaninsh">romaninsh</a>, <a href="https://github.com/fmalk">fmalk</a>, <a href="https://github.com/jeffrafter">jeffrafter</a>, <a href="https://github.com/sompylasar">sompylasar</a>, <a href="https://github.com/andyfowler">andyfowler</a>, <a href="https://github.com/RobRoy">RobRoy</a>, <a href="https://github.com/jakearchibald">jakearchibald</a>, <a href="https://github.com/seanhellwig">seanhellwig</a>, <a href="https://github.com/CJ-Jackson">CJ-Jackson</a>, <a href="https://github.com/kaichen">kaichen</a>, <a href="https://github.com/gselva">gselva</a>, <a href="https://github.com/erktime">erktime</a>, <a href="https://github.com/bradleyboy">bradleyboy</a>, <a href="https://github.com/kristerkari">kristerkari</a>, <a href="https://github.com/rmhall">rmhall</a>, <a href="https://github.com/tantalic">tantalic</a>, <a href="http://github.com/madesign">madesign</a>, <a href="http://github.com/aschempp">aschempp</a>, <a href="https://github.com/gavinlynch">gavinlynch</a>, <a href="http://github.com/Birol2010">Birol2010</a>, tons of others (see pulls)</li> 
+</ul>
+<h2> <a name="user-content-installation-and-usage" class="anchor" href="..md.html#installation-and-usage"><span class="octicon octicon-link"></span></a>Installation and Usage</h2> 
+<p><em>MediaElementPlayer: HTML5 <code>&lt;video&gt;</code> and <code>&lt;audio&gt;</code> player</em></p> 
+<p>A complete HTML/CSS audio/video player built on top <code>MediaElement.js</code> and <code>jQuery</code>. Many great HTML5 players have a completely separate Flash UI in fallback mode, but MediaElementPlayer.js uses the same HTML/CSS for all players.</p> 
+<h3> <a name="user-content-1-add-script-and-stylesheet" class="anchor" href="..md.html#1-add-script-and-stylesheet"><span class="octicon octicon-link"></span></a>1. Add Script and Stylesheet</h3> 
+<div class="highlight highlight-html">
+ <pre><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;jquery.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;mediaelement-and-player.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;mediaelementplayer.css&quot;</span> <span class="nt">/&gt;</span>
+</pre>
+</div> 
+<h3> <a name="user-content-2-add-video-or-audio-tags" class="anchor" href="..md.html#2-add-video-or-audio-tags"><span class="octicon octicon-link"></span></a>2. Add <code>&lt;video&gt;</code> or <code>&lt;audio&gt;</code> tags</h3> 
+<p>If your users have JavaScript and/or Flash, the easist route for all browsers and mobile devices is to use a single MP4 or MP3 file.</p> 
+<div class="highlight highlight-html">
+ <pre><span class="nt">&lt;video</span> <span class="na">src=</span><span class="s">&quot;myvideo.mp4&quot;</span> <span class="na">width=</span><span class="s">&quot;320&quot;</span> <span class="na">height=</span><span class="s">&quot;240&quot;</span><span class="nt">&gt;&lt;/video&gt;</span>
+</pre>
+</div> 
+<div class="highlight highlight-html">
+ <pre><span class="nt">&lt;video</span> <span class="na">src=</span><span class="s">&quot;myaudio.mp3&quot;</span><span class="nt">&gt;&lt;/video&gt;</span>
+</pre>
+</div> 
+<h4> <a name="user-content-optional-multiple-codecs" class="anchor" href="..md.html#optional-multiple-codecs"><span class="octicon octicon-link"></span></a>Optional: multiple codecs</h4> 
+<p>This includes multiple codecs for various browsers (H.264 for IE9+, Safari, and Chrome, WebM for Firefox 4 and Opera, Ogg for Firefox 3).</p> 
+<div class="highlight highlight-html">
+ <pre><span class="nt">&lt;video</span> <span class="na">width=</span><span class="s">&quot;320&quot;</span> <span class="na">height=</span><span class="s">&quot;240&quot;</span> <span class="na">poster=</span><span class="s">&quot;poster.jpg&quot;</span> <span class="na">controls=</span><span class="s">&quot;controls&quot;</span> <span class="na">preload=</span><span class="s">&quot;none&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;source</span> <span class="na">type=</span><span class="s">&quot;video/mp4&quot;</span> <span class="na">src=</span><span class="s">&quot;myvideo.mp4&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;source</span> <span class="na">type=</span><span class="s">&quot;video/webm&quot;</span> <span class="na">src=</span><span class="s">&quot;myvideo.webm&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;source</span> <span class="na">type=</span><span class="s">&quot;video/ogg&quot;</span> <span class="na">src=</span><span class="s">&quot;myvideo.ogv&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/video&gt;</span>
+</pre>
+</div> 
+<h4> <a name="user-content-optional-browsers-with-javascript-disabled" class="anchor" href="..md.html#optional-browsers-with-javascript-disabled"><span class="octicon octicon-link"></span></a>Optional: Browsers with JavaScript disabled</h4> 
+<p>In very rare cases, you might have an non-HTML5 browser with Flash turned on and JavaScript turned off. In that specific case, you can also include the Flash <code>&lt;object&gt;</code> code.</p> 
+<div class="highlight highlight-html">
+ <pre><span class="nt">&lt;video</span> <span class="na">width=</span><span class="s">&quot;320&quot;</span> <span class="na">height=</span><span class="s">&quot;240&quot;</span> <span class="na">poster=</span><span class="s">&quot;poster.jpg&quot;</span> <span class="na">controls=</span><span class="s">&quot;controls&quot;</span> <span class="na">preload=</span><span class="s">&quot;none&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;source</span> <span class="na">type=</span><span class="s">&quot;video/mp4&quot;</span> <span class="na">src=</span><span class="s">&quot;myvideo.mp4&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;source</span> <span class="na">type=</span><span class="s">&quot;video/webm&quot;</span> <span class="na">src=</span><span class="s">&quot;myvideo.webm&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;source</span> <span class="na">type=</span><span class="s">&quot;video/ogg&quot;</span> <span class="na">src=</span><span class="s">&quot;myvideo.ogv&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;object</span> <span class="na">width=</span><span class="s">&quot;320&quot;</span> <span class="na">height=</span><span class="s">&quot;240&quot;</span> <span class="na">type=</span><span class="s">&quot;application/x-shockwave-flash&quot;</span> <span class="na">data=</span><span class="s">&quot;flashmediaelement.swf&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;param</span> <span class="na">name=</span><span class="s">&quot;movie&quot;</span> <span class="na">value=</span><span class="s">&quot;flashmediaelement.swf&quot;</span> <span class="nt">/&gt;</span> 
+        <span class="nt">&lt;param</span> <span class="na">name=</span><span class="s">&quot;flashvars&quot;</span> <span class="na">value=</span><span class="s">&quot;controls=true&amp;amp;poster=myvideo.jpg&amp;amp;file=myvideo.mp4&quot;</span> <span class="nt">/&gt;</span>        
+        <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;myvideo.jpg&quot;</span> <span class="na">width=</span><span class="s">&quot;320&quot;</span> <span class="na">height=</span><span class="s">&quot;240&quot;</span> <span class="na">title=</span><span class="s">&quot;No video playback capabilities&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/object&gt;</span>
+<span class="nt">&lt;/video&gt;</span>
+</pre>
+</div> 
+<h3> <a name="user-content-3-startup" class="anchor" href="..md.html#3-startup"><span class="octicon octicon-link"></span></a>3. Startup</h3> 
+<h4> <a name="user-content-automatic-start" class="anchor" href="..md.html#automatic-start"><span class="octicon octicon-link"></span></a>Automatic start</h4> 
+<p>You can avoid running any startup scripts by added <code>class=&quot;mejs-player&quot;</code> to the <code>&lt;video&gt;</code> or <code>&lt;audio&gt;</code> tag. Options can be added using the <code>data-mejsoptions</code> attribute</p> 
+<div class="highlight highlight-html">
+ <pre><span class="nt">&lt;video</span> <span class="na">src=</span><span class="s">&quot;myvideo.mp4&quot;</span> <span class="na">width=</span><span class="s">&quot;320&quot;</span> <span class="na">height=</span><span class="s">&quot;240&quot;</span> 
+        <span class="na">class=</span><span class="s">&quot;mejs-player&quot;</span> 
+        <span class="na">data-mejsoptions=</span><span class="s">'{&quot;alwaysShowControls&quot;: true}'</span><span class="nt">&gt;&lt;/video&gt;</span>
+</pre>
+</div> 
+<h4> <a name="user-content-normal-javascirpt" class="anchor" href="..md.html#normal-javascirpt"><span class="octicon octicon-link"></span></a>Normal JavaScirpt</h4> 
+<div class="highlight highlight-html">
+ <pre><span class="nt">&lt;script&gt;</span>
+<span class="kd">var</span> <span class="nx">player</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MediaElementPlayer</span><span class="p">(</span><span class="s1">'#player'</span><span class="p">,</span> <span class="p">{</span><span class="nx">success</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">mediaElement</span><span class="p">,</span> <span class="nx">originalNode</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// do things</span>
+<span class="p">}});</span>
+<span class="nt">&lt;/script&gt;</span>   
+</pre>
+</div> 
+<h4> <a name="user-content-jquery-plugin" class="anchor" href="..md.html#jquery-plugin"><span class="octicon octicon-link"></span></a>jQuery plugin</h4> 
+<div class="highlight highlight-html">
+ <pre><span class="nt">&lt;script&gt;</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'video'</span><span class="p">).</span><span class="nx">mediaelementplayer</span><span class="p">({</span><span class="nx">success</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">mediaElement</span><span class="p">,</span> <span class="nx">originalNode</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// do things</span>
+<span class="p">}});</span>
+<span class="nt">&lt;/script&gt;</span>
+</pre>
+</div> 
+<h2> <a name="user-content-how-it-works" class="anchor" href="..md.html#how-it-works"><span class="octicon octicon-link"></span></a>How it Works:</h2> 
+<p><em>MediaElement.js: HTML5 <code>&lt;video&gt;</code> and <code>&lt;audio&gt;</code> shim</em></p> 
+<p><code>MediaElement.js</code> is a set of custom Flash and Silverlight plugins that mimic the HTML5 MediaElement API for browsers that don't support HTML5 or don't support the media codecs you're using. Instead of using Flash as a <em>fallback</em>, Flash is used to make the browser seem HTML5 compliant and enable codecs like H.264 (via Flash) and even WMV (via Silverlight) on all browsers.</p> 
+<div class="highlight highlight-html">
+ <pre><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;mediaelement.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;video</span> <span class="na">src=</span><span class="s">&quot;myvideo.mp4&quot;</span> <span class="na">width=</span><span class="s">&quot;320&quot;</span> <span class="na">height=</span><span class="s">&quot;240&quot;</span><span class="nt">&gt;&lt;/video&gt;</span>
+
+<span class="nt">&lt;script&gt;</span>
+<span class="kd">var</span> <span class="nx">v</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s2">&quot;video&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span>
+<span class="k">new</span> <span class="nx">MediaElement</span><span class="p">(</span><span class="nx">v</span><span class="p">,</span> <span class="p">{</span><span class="nx">success</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">media</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">media</span><span class="p">.</span><span class="nx">play</span><span class="p">();</span>
+<span class="p">}});</span>
+<span class="nt">&lt;/script&gt;</span>
+</pre>
+</div> 
+<p>You can use this as a standalone library if you wish, or just stick with the full MediaElementPlayer.</p> 
+<h3> <a name="user-content-version-history" class="anchor" href="..md.html#version-history"><span class="octicon octicon-link"></span></a>Version History</h3> 
+<p><em>2.14.2 (2014/04/04)</em></p> 
+<ul> 
+ <li>Additional progress bar checks for hidden/missing bars</li> 
+ <li>Add Gruntfile.js build support (<a href="https://github.com/johndyer/mediaelement/pull/1147">https://github.com/johndyer/mediaelement/pull/1147</a>) [jeremyfelt]</li> 
+ <li>Add #! line to Builder.py for legacy builds (<a href="https://github.com/johndyer/mediaelement/pull/1036">https://github.com/johndyer/mediaelement/pull/1036</a>) [amenonsen]</li> 
+</ul>
+<p><em>2.14.1 (2014/03/31)</em></p> 
+<ul> 
+ <li>Fix infinite loop on progress bar </li> 
+</ul>
+<p><em>2.14.0 (2014/03/29)</em></p> 
+<ul> 
+ <li>Vimeo support (<a href="https://github.com/johndyer/mediaelement/pull/1079">https://github.com/johndyer/mediaelement/pull/1079</a>) [clkao]</li> 
+ <li>fix for aac-audio (itunes-samples etc.) (<a href="https://github.com/johndyer/mediaelement/pull/1133">https://github.com/johndyer/mediaelement/pull/1133</a>) [faebser]</li> 
+ <li>added 'm4a' file type, to be detected as 'audio/mp4' (<a href="https://github.com/johndyer/mediaelement/pull/988">https://github.com/johndyer/mediaelement/pull/988</a>) [heshiming]</li> 
+ <li>Function remove() should remove mejs container only if it exists (<a href="https://github.com/johndyer/mediaelement/pull/1144">https://github.com/johndyer/mediaelement/pull/1144</a>) [lucash]</li> 
+ <li>Handle the case when parentNode is null (<a href="https://github.com/johndyer/mediaelement/pull/1136">https://github.com/johndyer/mediaelement/pull/1136</a>) [lbeder, also hypomodern]</li> 
+ <li>fix leaky variables (<a href="https://github.com/johndyer/mediaelement/pull/1123">https://github.com/johndyer/mediaelement/pull/1123</a>) [kernel]</li> 
+ <li>Fixed display of volume control on non-mobile touch devices (<a href="https://github.com/johndyer/mediaelement/pull/1093">https://github.com/johndyer/mediaelement/pull/1093</a>) [OwenEdwards]</li> 
+ <li>Calculate correctly the video player height for 100% (<a href="https://github.com/johndyer/mediaelement/pull/1083">https://github.com/johndyer/mediaelement/pull/1083</a>) [LeResKP]</li> 
+ <li>restore focus after click on the controls (<a href="https://github.com/johndyer/mediaelement/pull/1094">https://github.com/johndyer/mediaelement/pull/1094</a>) [rounce]</li> 
+ <li>Support youtu.be URL for youtube source (<a href="https://github.com/johndyer/mediaelement/pull/1135">https://github.com/johndyer/mediaelement/pull/1135</a>) [clkao]</li> 
+ <li>Make slider work on touch devices (<a href="https://github.com/johndyer/mediaelement/pull/1033">https://github.com/johndyer/mediaelement/pull/1033</a>) [Singularetantum]</li> 
+ <li>add Simplified Chinese translation (<a href="https://github.com/johndyer/mediaelement/pull/1065">https://github.com/johndyer/mediaelement/pull/1065</a>) [michaeljayt]</li> 
+ <li>Fixed the reference to <code>media</code> in the bigPlay control creation. (<a href="https://github.com/johndyer/mediaelement/pull/1111">https://github.com/johndyer/mediaelement/pull/1111</a>) [nuzzio]</li> 
+ <li>Fix layout bug when zooming page (<a href="https://github.com/johndyer/mediaelement/pull/1097">https://github.com/johndyer/mediaelement/pull/1097</a>) [ChiChou]</li> 
+ <li>Fix fullscreen iframe zoom bug. (<a href="https://github.com/johndyer/mediaelement/pull/1070">https://github.com/johndyer/mediaelement/pull/1070</a>) [lisbakke]</li> 
+</ul>
+<p><em>2.13.2 (2014/01/24)</em></p> 
+<ul> 
+ <li>Removed breaking <code>hasTouch</code> detection</li> 
+ <li>Fixed IE detection <a href="https://github.com/johndyer/mediaelement/pull/1018">https://github.com/johndyer/mediaelement/pull/1018</a> </li> 
+ <li>fix play() on ipad does not start playing and double click issue (<a href="https://github.com/johndyer/mediaelement/pull/918">https://github.com/johndyer/mediaelement/pull/918</a>) [fbuecklers]</li> 
+ <li>added scale=default to Flash for better 100% <a href="https://github.com/johndyer/mediaelement/pull/963">https://github.com/johndyer/mediaelement/pull/963</a> </li> 
+ <li>Add code fences for GHFM <a href="https://github.com/johndyer/mediaelement/pull/975">https://github.com/johndyer/mediaelement/pull/975</a> </li> 
+ <li>i18n improvements <a href="https://github.com/johndyer/mediaelement/pull/1025">https://github.com/johndyer/mediaelement/pull/1025</a> </li> 
+</ul>
+<p><em>2.13.1 (2013/09/?06)</em></p> 
+<ul> 
+ <li>Support for fullscreen in IE11 beta</li> 
+</ul>
+<p><em>2.13.0 (2013/09/01)</em></p> 
+<ul> 
+ <li>BREAKING FLASH SECURITY CHANGE: Removed <code>allowDomain(&quot;*&quot;)</code> by default. If you use MediaElement.js on a different domain use the <code>flashmediaelement-cdn.swf</code> file (nacin) <a href="https://github.com/johndyer/mediaelement/pull/956">https://github.com/johndyer/mediaelement/pull/956</a> </li> 
+ <li>Use only FlashVars and ignore parameters passed via query string.</li> 
+ <li>Force LTR in controls (for RTL users) (nacin) <a href="https://github.com/johndyer/mediaelement/pull/958">https://github.com/johndyer/mediaelement/pull/958</a> </li> 
+</ul>
+<p><em>2.12.1 (2013/08/26)</em></p> 
+<ul> 
+ <li>Remove all <code>console.log</code> statements in <code>Builder.py</code> JD</li> 
+ <li>More i18n fixes for Wordpress (SergeyBiryukov) <a href="https://github.com/johndyer/mediaelement/pull/940">https://github.com/johndyer/mediaelement/pull/940</a> </li> 
+ <li>Fix touch detection in QtWebKit (peterbrook) <a href="https://github.com/johndyer/mediaelement/pull/939">https://github.com/johndyer/mediaelement/pull/939</a> </li> 
+ <li>Added configuration option httpsBasicAuthSite fix sites using HTTPS basic authentication (benroy73) <a href="https://github.com/johndyer/mediaelement/pull/937">https://github.com/johndyer/mediaelement/pull/937</a> </li> 
+ <li>Fixed backlight plugin error (eviweb) <a href="https://github.com/johndyer/mediaelement/pull/932">https://github.com/johndyer/mediaelement/pull/932</a> </li> 
+ <li>Fix some wrong dates on the change log (heartcode) <a href="https://github.com/johndyer/mediaelement/pull/930">https://github.com/johndyer/mediaelement/pull/930</a> </li> 
+ <li>Add a mejs-fullscreen css class on the root element (fbuecklers) <a href="https://github.com/johndyer/mediaelement/pull/925">https://github.com/johndyer/mediaelement/pull/925</a> </li> 
+ <li>fix for ff switch between fullscreen and normal mode (fbuecklers) <a href="https://github.com/johndyer/mediaelement/pull/924">https://github.com/johndyer/mediaelement/pull/924</a> </li> 
+ <li>Multiple fixes: old issue #548, current issues #754 and #902 (peterh-capella) <a href="https://github.com/johndyer/mediaelement/pull/923">https://github.com/johndyer/mediaelement/pull/923</a> </li> 
+ <li>fix firefox detect 100% mode issue (KaptinLin ) <a href="https://github.com/johndyer/mediaelement/pull/919">https://github.com/johndyer/mediaelement/pull/919</a> </li> 
+ <li>Option to show the poster when the video is ended (LeResKP) <a href="https://github.com/johndyer/mediaelement/pull/891">https://github.com/johndyer/mediaelement/pull/891</a> </li> 
+ <li>Fix for Chrome autoplaying when forcing Flash (tjsnyder) <a href="https://github.com/johndyer/mediaelement/pull/889">https://github.com/johndyer/mediaelement/pull/889</a> </li> 
+ <li>Allow SWF to work over insecure domain (sebablanco ) <a href="https://github.com/johndyer/mediaelement/pull/897">https://github.com/johndyer/mediaelement/pull/897</a> </li> 
+ <li>Corrected buffering height on CSS (SourceR85 ) <a href="https://github.com/johndyer/mediaelement/pull/875">https://github.com/johndyer/mediaelement/pull/875</a> </li> 
+ <li>CSS cleanup (awittdesigns) <a href="https://github.com/johndyer/mediaelement/pull/883">https://github.com/johndyer/mediaelement/pull/883</a> </li> 
+</ul>
+<p><em>2.12.0 (2013/06/02)</em></p> 
+<ul> 
+ <li>Removed old media files from repo (reduced filesize from 150MB to 25MB)</li> 
+ <li>Added <code>test.html</code> to <code>/tests/</code> folder to use JS files in <code>/src/</code> folder</li> 
+ <li>Fullscreen plugin player toggles play/pause when controls are clicked (JeffreyATW) <a href="https://github.com/johndyer/mediaelement/pull/742">https://github.com/johndyer/mediaelement/pull/742</a> </li> 
+ <li>Making use of pluginWidth &amp; pluginHeight (simonschuh) <a href="https://github.com/johndyer/mediaelement/pull/837">https://github.com/johndyer/mediaelement/pull/837</a> </li> 
+ <li>Proportional poster images (IE9+ Chrome, Safari, Firefox) (eyefood) <a href="https://github.com/johndyer/mediaelement/pull/838">https://github.com/johndyer/mediaelement/pull/838</a> </li> 
+ <li>Fixed video resolution on seek in flash (efEris) <a href="https://github.com/johndyer/mediaelement/pull/839">https://github.com/johndyer/mediaelement/pull/839</a> </li> 
+ <li>Option for custom error message when no plugins are found. (svoynow-lz) <a href="https://github.com/johndyer/mediaelement/pull/842">https://github.com/johndyer/mediaelement/pull/842</a> </li> 
+ <li>Fix for Safari to play video on HTTPS site (benroy73) <a href="https://github.com/johndyer/mediaelement/pull/845">https://github.com/johndyer/mediaelement/pull/845</a> </li> 
+ <li>Fixes Mute/UnMute when playing from a YouTube source (mbaker3) <a href="https://github.com/johndyer/mediaelement/pull/848">https://github.com/johndyer/mediaelement/pull/848</a> </li> 
+ <li>i18n fixes for better compatibility with WordPress (SergeyBiryukov) <a href="https://github.com/johndyer/mediaelement/pull/850">https://github.com/johndyer/mediaelement/pull/850</a> </li> 
+ <li>Fixing invalid characters restrictions for URLs (sebablanco) <a href="https://github.com/johndyer/mediaelement/pull/859">https://github.com/johndyer/mediaelement/pull/859</a> </li> 
+ <li>Checking for pluginType on media instead of mediaelementplayer in Fullscreen (JeffreyATW) <a href="https://github.com/johndyer/mediaelement/pull/865">https://github.com/johndyer/mediaelement/pull/865</a> </li> 
+ <li>Problem with IE9 on Windows 7 N / Windows 7 KN without WMP installed (sarvaje) <a href="https://github.com/johndyer/mediaelement/pull/868">https://github.com/johndyer/mediaelement/pull/868</a> </li> 
+ <li>Cleanup stylesheet (jawittdesigns) <a href="https://github.com/johndyer/mediaelement/pull/867">https://github.com/johndyer/mediaelement/pull/867</a> </li> 
+ <li>Properly treat namespace-only events for <code>globalUnbind()</code> (odnamrataizem) <a href="https://github.com/johndyer/mediaelement/pull/878">https://github.com/johndyer/mediaelement/pull/878</a> </li> 
+ <li>Fixed issue with slash character separating time (S2) <a href="https://github.com/johndyer/mediaelement/pull/879">https://github.com/johndyer/mediaelement/pull/879</a> </li> 
+</ul>
+<p><em>2.11.3 (2013/04/13)</em></p> 
+<ul> 
+ <li>Change to <code>getScriptPath</code> to allow querystring variables to be added (for Wordpress Core)</li> 
+</ul>
+<p><em>2.11.2 (2013/04/12)</em></p> 
+<ul> 
+ <li>Fixed overly aggressive XSS testing (excluding forward slashes)</li> 
+ <li>Fixed line endings on Flash (*.as) files (markjaquith) (<a href="https://github.com/johndyer/mediaelement/pull/834">https://github.com/johndyer/mediaelement/pull/834</a>)</li> 
+ <li>Included protocol relative URL for YouTube (Dan Tsosie) (<a href="https://github.com/johndyer/mediaelement/pull/832">https://github.com/johndyer/mediaelement/pull/832</a>)</li> 
+</ul>
+<p><em>2.11.1 (2013/04/11)</em></p> 
+<p>Major changes</p> 
+<ul> 
+ <li>Removed Ogg, WebM, and MP3 files to keep download under 10MB. Files are now at <a href="https://github.com/johndyer/mediaelement-files">https://github.com/johndyer/mediaelement-files</a> </li> 
+ <li>Simple Flash Pseudo-streaming <a href=".BryanMorgan.md.html">set enablePseudoStreaming:true, pseudoStreamingStartQueryParam:'start'</a> (<a href="https://github.com/johndyer/mediaelement/pull/814">https://github.com/johndyer/mediaelement/pull/814</a>)</li> 
+ <li>Fixed possible XSS attack through <code>file=</code> parameter in <code>flashmediaelement.swf</code> </li> 
+</ul>
+<p>Fixes and updates</p> 
+<ul> 
+ <li>Protocol relative YouTube URLs for <code>iframe</code> API (dtsosie) (<a href="https://github.com/johndyer/mediaelement/pull/825">https://github.com/johndyer/mediaelement/pull/825</a>)</li> 
+ <li>Added aria-label to all button elements (Luzifer) (<a href="https://github.com/johndyer/mediaelement/pull/824">https://github.com/johndyer/mediaelement/pull/824</a>)</li> 
+ <li>Fixed preroll adclick URL (johndyer)</li> 
+ <li>Traditional chinese locale strings for i18n module (latzt) (<a href="https://github.com/johndyer/mediaelement/pull/820">https://github.com/johndyer/mediaelement/pull/820</a>)</li> 
+ <li>Allow captions on audio player (LeResKP) (<a href="https://github.com/johndyer/mediaelement/pull/819">https://github.com/johndyer/mediaelement/pull/819</a>)</li> 
+ <li>Fix incorrect path returned by <code>getScriptPath()</code> (Ciki) (Fix incorrect path returned by getScriptPath())</li> 
+ <li>Overhauling hover div creation and placement (JeffreyATW) (<a href="https://github.com/johndyer/mediaelement/pull/813">https://github.com/johndyer/mediaelement/pull/813</a>)</li> 
+ <li>Clear timeout for second fullscreen stretch attempt (JeffreyATW) (<a href="https://github.com/johndyer/mediaelement/pull/812">https://github.com/johndyer/mediaelement/pull/812</a>)</li> 
+ <li>fix type resolution when extension is uppercased (jbdemonte) (<a href="https://github.com/johndyer/mediaelement/pull/801">https://github.com/johndyer/mediaelement/pull/801</a>)</li> 
+ <li>&quot;splice is not a function&quot; fix on <code>MediaElementPlayer.remove()</code> (odnamrataizem) (<a href="https://github.com/johndyer/mediaelement/pull/799">https://github.com/johndyer/mediaelement/pull/799</a>)</li> 
+ <li>Make Flash stage handle CLICK rather than MOUSE_DOWN (odnamrataizem) (<a href="https://github.com/johndyer/mediaelement/pull/804">https://github.com/johndyer/mediaelement/pull/804</a>)</li> 
+</ul>
+<p><em>2.11.0 (2013/03/13)</em></p> 
+<ul> 
+ <li>Preroll ads manager</li> 
+ <li>VAST ads plugin (sponsored by Minito Video)</li> 
+ <li>Slides <code>&lt;track&gt;</code> type (non-standard HTML5 use)</li> 
+ <li>Calculate rails size only with visible elements (romanbsd) (<a href="https://github.com/johndyer/mediaelement/pull/773">https://github.com/johndyer/mediaelement/pull/773</a>)</li> 
+ <li>Round calculations of progress bar to prevent fractions (romanbsd) (<a href="https://github.com/johndyer/mediaelement/pull/768">https://github.com/johndyer/mediaelement/pull/768</a>)</li> 
+ <li>Fix AndroidUseNativeControls (LeResKP) (<a href="https://github.com/johndyer/mediaelement/pull/749">https://github.com/johndyer/mediaelement/pull/749</a>)</li> 
+ <li>Muting the volume icon if startVolume is set to 0 (heartcode) (<a href="https://github.com/johndyer/mediaelement/pull/747">https://github.com/johndyer/mediaelement/pull/747</a>)</li> 
+ <li>Make YouTube URL protocol relative (strworkstation) (<a href="https://github.com/johndyer/mediaelement/pull/761">https://github.com/johndyer/mediaelement/pull/761</a>)</li> 
+ <li>Prevent Flash audio player from sending too many 'progress' events (johndyer)</li> 
+ <li>Properly clean up player when calling MediaElementPlayer.remove() (odnamrataizem) (<a href="https://github.com/johndyer/mediaelement/pull/779">https://github.com/johndyer/mediaelement/pull/779</a>)</li> 
+ <li>Add &quot;mejs-shim&quot; class to all shims to prevent improper resizing (JeffreyATW) (<a href="https://github.com/johndyer/mediaelement/pull/789">https://github.com/johndyer/mediaelement/pull/789</a>)</li> 
+ <li>Bug fix for the error &quot;this.pluginApi.pauseMedia is not a function&quot; when using the flash player and removing the dom element. (Jmaharman) <a href="https://github.com/johndyer/mediaelement/pull/788">https://github.com/johndyer/mediaelement/pull/788</a> </li> 
+ <li>Make possible to open youtube links as audio only (Seb33300) <a href="https://github.com/johndyer/mediaelement/pull/784">https://github.com/johndyer/mediaelement/pull/784</a> </li> 
+ <li>Add a few basic Jasmine tests (msgilligan) <a href="https://github.com/johndyer/mediaelement/pull/781">https://github.com/johndyer/mediaelement/pull/781</a> </li> 
+ <li>Add option to hide the video controls on load (eResKP) <a href="https://github.com/johndyer/mediaelement/pull/780#issuecomment-14781622">https://github.com/johndyer/mediaelement/pull/780#issuecomment-14781622</a> </li> 
+ <li>[cc] button can now be a toggle when there's just one track (LeResKP) <a href="https://github.com/johndyer/mediaelement/pull/793">https://github.com/johndyer/mediaelement/pull/793</a> </li> 
+ <li>fixed error when srclang was missing</li> 
+</ul>
+<p><em>2.10.3 (2013/01/27)</em></p> 
+<ul> 
+ <li>Fix broken scrollbar from API reference error (peterbrook) (<a href="https://github.com/johndyer/mediaelement/pull/739">https://github.com/johndyer/mediaelement/pull/739</a>)</li> 
+</ul>
+<p><em>2.10.2 (2013/01/26)</em></p> 
+<ul> 
+ <li>The project is now MIT-only, instead of dual licensed MIT and GPL (just as jQuery has done: <a href="http://jquery.org/license/">http://jquery.org/license/</a>)</li> 
+ <li>Fix audio height in 100% mode (<a href="https://github.com/johndyer/mediaelement/pull/667">https://github.com/johndyer/mediaelement/pull/667</a>)</li> 
+ <li>Make rewinding at the end optional (<a href="https://github.com/johndyer/mediaelement/pull/725">https://github.com/johndyer/mediaelement/pull/725</a>)</li> 
+ <li>Bugfix: attributes for PluginMediaElement (<a href="https://github.com/johndyer/mediaelement/pull/722">https://github.com/johndyer/mediaelement/pull/722</a>)</li> 
+ <li>Add mejs-long-video class when capture is 1hr or longer, custom styles (<a href="https://github.com/johndyer/mediaelement/pull/715">https://github.com/johndyer/mediaelement/pull/715</a>)</li> 
+ <li>Fix for dragging playhead horizontally off the video (<a href="https://github.com/johndyer/mediaelement/pull/711">https://github.com/johndyer/mediaelement/pull/711</a>)</li> 
+ <li>Align timing of captions with show/hide controls (<a href="https://github.com/johndyer/mediaelement/pull/708">https://github.com/johndyer/mediaelement/pull/708</a>)</li> 
+ <li>Missing semicolon (<a href="https://github.com/johndyer/mediaelement/pull/737">https://github.com/johndyer/mediaelement/pull/737</a>)</li> 
+ <li>Don't send timeupdate event after ended event (<a href="https://github.com/johndyer/mediaelement/pull/727">https://github.com/johndyer/mediaelement/pull/727</a>)</li> 
+ <li>Added option to disable pause/play on main div click (<a href="https://github.com/johndyer/mediaelement/pull/735">https://github.com/johndyer/mediaelement/pull/735</a>)</li> 
+</ul>
+<p><em>2.10.1 (2012/12/31)</em></p> 
+<ul> 
+ <li>New postroll feature (<a href="https://github.com/johndyer/mediaelement/pull/660">https://github.com/johndyer/mediaelement/pull/660</a>)</li> 
+ <li>PluginMediaElement click-to-pause behavior doesn't work (<a href="https://github.com/johndyer/mediaelement/pull/691">https://github.com/johndyer/mediaelement/pull/691</a>)</li> 
+ <li>Use the normal CSS property name after the vendor prefix (<a href="https://github.com/johndyer/mediaelement/pull/686">https://github.com/johndyer/mediaelement/pull/686</a>) </li> 
+ <li>Select first source that is supported by the browser (<a href="https://github.com/johndyer/mediaelement/pull/679">https://github.com/johndyer/mediaelement/pull/679</a>)</li> 
+ <li>fixed outerWidth for jQuery 1.8 compatiability (<a href="https://github.com/johndyer/mediaelement/pull/680">https://github.com/johndyer/mediaelement/pull/680</a>)</li> 
+ <li>Fix for Issue #676 when Stop button does not behaves as expected in selected browsers (<a href="https://github.com/johndyer/mediaelement/pull/678">https://github.com/johndyer/mediaelement/pull/678</a>)</li> 
+ <li>Fix source switching on Webkit in SourceChooser (<a href="https://github.com/johndyer/mediaelement/pull/675">https://github.com/johndyer/mediaelement/pull/675</a>)</li> 
+ <li>Better 100% mode handling within non-visible container (<a href="https://github.com/johndyer/mediaelement/pull/668">https://github.com/johndyer/mediaelement/pull/668</a>)</li> 
+ <li>Display chapter tracks for late-loading video sources, including YouTube (<a href="https://github.com/johndyer/mediaelement/pull/665">https://github.com/johndyer/mediaelement/pull/665</a>)</li> 
+ <li>Added SVG Stop icon (<a href="https://github.com/johndyer/mediaelement/pull/696">https://github.com/johndyer/mediaelement/pull/696</a>)</li> 
+ <li>Added SVG source chooser icon (<a href="https://github.com/johndyer/mediaelement/pull/669">https://github.com/johndyer/mediaelement/pull/669</a>)</li> 
+ <li>Adding rounding to volume slider left, top, and and width setters (<a href="https://github.com/johndyer/mediaelement/pull/684">https://github.com/johndyer/mediaelement/pull/684</a>)</li> 
+ <li>Display chapter tracks for late-loading video sources, including YouTube (<a href="https://github.com/johndyer/mediaelement/pull/665">https://github.com/johndyer/mediaelement/pull/665</a>)</li> 
+</ul>
+<p><em>2.10.0 (2012/11/23)</em></p> 
+<ul> 
+ <li>Support of matchMedia where possible [zachleat]</li> 
+ <li>Fix for 100% audio using correct sizing [dougwilson]</li> 
+ <li>SVG icons for better Retina support [johndyer]</li> 
+ <li>Localized buttons [latzt] <a href="https://github.com/johndyer/mediaelement/pull/627">https://github.com/johndyer/mediaelement/pull/627</a> </li> 
+ <li>Volume handle doesn't set initial position properly [JeffreyATW] <a href="https://github.com/johndyer/mediaelement/pull/625">https://github.com/johndyer/mediaelement/pull/625</a> </li> 
+ <li>Cleaned up some CSS whitespace <a href="https://github.com/johndyer/mediaelement/pull/656">https://github.com/johndyer/mediaelement/pull/656</a> </li> 
+ <li>Vimeo - updated to iframe code (from old megaloop)</li> 
+</ul>
+<p><em>2.9.5 (2012/09/26)</em></p> 
+<ul> 
+ <li>Fixed faulty FlashMediaElement.swf (due to Git program mashing it)</li> 
+ <li>Fixed track element issues introduced by DFXP captions</li> 
+</ul>
+<p><em>2.9.4 (2012/09/24)</em></p> 
+<ul> 
+ <li>Improved RTMP parsing [pansapien] <a href="https://github.com/johndyer/mediaelement/pull/574">https://github.com/johndyer/mediaelement/pull/574</a> </li> 
+ <li>Added <code>flashStreamer</code> option to separate streamer from file</li> 
+ <li>Raise an error for unknown video size in Flash [denmarkin] <a href="https://github.com/johndyer/mediaelement/pull/571">https://github.com/johndyer/mediaelement/pull/571</a> </li> 
+ <li>Fix for alwaysShowControls with keyboard interaction [peterh-capella] <a href="https://github.com/johndyer/mediaelement/pull/569">https://github.com/johndyer/mediaelement/pull/569</a> </li> 
+ <li>Support for DFXP captions [justinl-capella] <a href="https://github.com/johndyer/mediaelement/pull/420">https://github.com/johndyer/mediaelement/pull/420</a> </li> 
+</ul>
+<p>*2.9.3 (2012/08/23) *</p> 
+<ul> 
+ <li>Allows use of <code>style=&quot;max-width: 100%;&quot;</code> for responsive video</li> 
+ <li>Added type to source buttons in mep-feature-sourcechooser.js:48 [flamadiddle ]</li> 
+ <li>Fix use of inArray and $ in src/js/me-shim.js <a href=".this was a regression bug from another fix.md.html">lftl, Seb33300, eusonic and others</a> </li> 
+ <li>Fixing syntax error in events demo [JeffreyATW]</li> 
+</ul>
+<p>*2.9.2 (2012/07/06) *</p> 
+<ul> 
+ <li>Added a few height checks (from Joe Anderson)</li> 
+ <li>Removed console.log statements</li> 
+ <li>Better file MIME type detection when the &quot;type&quot; attribute is not set (Seb33300)</li> 
+ <li>Pass the event keyCode to the keyActions handler, and make seek interval configurable (bborn)</li> 
+ <li>Responsive flash fix, YouTube edits (heikki)</li> 
+ <li>New <code>auto_plugin</code> mode that starts with plugins then tries HTML5 (savil)</li> 
+</ul>
+<p><em>2.9.1 (2012/06/01)</em></p> 
+<ul> 
+ <li>Fixed Firefox 10+ Fullscreen error</li> 
+</ul>
+<p><em>2.9.0 (2012/05/31)</em></p> 
+<ul> 
+ <li>Fixed pointer-events detection in IE9 (when using Flash mode or YouTube)</li> 
+ <li>YouTube now shows annotations (using YouTube player rather than chromeless)</li> 
+ <li>Fix play/pause when clicking on video when overlays are displayed [markomarkovic]</li> 
+ <li>Dont listen to mouse events when there's not a reason to [neverarriving]</li> 
+ <li>Adding CSS animated buffer to the time rail [neverarriving]</li> 
+ <li>Fix for box-sizing: border-box from cutting off time text. [MatthewCallis]</li> 
+</ul>
+<p><em>2.8.2 (2012/05/15)</em></p> 
+<ul> 
+ <li>Fixed volume slider bug when initially hidden</li> 
+ <li>Fixed YouTube size problems in Flash mode</li> 
+</ul>
+<p><em>2.8.1 (2012/04/19)</em></p> 
+<ul> 
+ <li>Flash fullscreen: video not fullsized</li> 
+ <li>Flash fullscreen: youtube controls not working</li> 
+</ul>
+<p><em>2.8.0 (2012/04/17)</em></p> 
+<ul> 
+ <li>Revamped YouTube to work using the Flash shim so that it supports fullscreen</li> 
+ <li>Fix for <code>remove()</code> method (lennym)</li> 
+ <li>Fix possible issue with ContextMenu ( quangvhg)</li> 
+ <li>Fix for stop button ( slavva97)</li> 
+ <li>Type on <code>var</code> and <code>;</code> (lennym)</li> 
+ <li>Fix for keyboard support forward and backward (myffical)</li> 
+</ul>
+<p><em>2.7.0 (2012/03/12)</em></p> 
+<ul> 
+ <li>Added horizontal volume control, the new default for audio (based on work by <a href="http://github.com/gavinlynch">gavinlynch</a>)</li> 
+ <li>Possible issues with &lt; IE8 centering resolved</li> 
+ <li>Full set of controls under Silverlight (<a href="https://github.com/Birol2010/">Birol2010</a>)</li> 
+ <li>YouTube fix [raknam]</li> 
+ <li>shim now has a .tagName property, and other DOM-like methods [tantalic]</li> 
+ <li>Poster display fix when HTML5, Flash, and Silverlight are all missing [bruha]</li> 
+ <li>Source Chooser plugin [markomarkovic]</li> 
+ <li>Fix for flash audio mute [lbernau]</li> 
+</ul>
+<p><em>2.6.5 (2012/02/01)</em></p> 
+<ul> 
+ <li>Removed iOS 3.x poster code [xtat] [James Cross]</li> 
+ <li>Fixed bug when player is initially hidden in <code>display:none;</code> </li> 
+ <li>Workaround for when inside an <code>&lt;iframe&gt;</code> and Chrome doesn't correctly report exiting from fullscreen</li> 
+</ul>
+<p><em>2.6.4 (2012/01/10)</em></p> 
+<ul> 
+ <li>Fixed a Flash bug when one video ended and another was loaded through <code>setSrc()</code> and <code>load()</code> </li> 
+ <li>Option for markup between current time and duration [tantalic]</li> 
+</ul>
+<p><em>2.6.3 (2012/01/08)</em></p> 
+<ul> 
+ <li>Sending all options to Flash including colors</li> 
+</ul>
+<p><em>2.6.2 (2012/01/06)</em></p> 
+<ul> 
+ <li>Fixed Flash fullscreen button inside an <code>&lt;iframe&gt;</code> </li> 
+ <li>Fixed flash auto starting in 100% mode</li> 
+</ul>
+<p><em>2.6.1 (2012/01/03)</em></p> 
+<ul> 
+ <li>Updated Opera's Flash Fullscreen support (apparently, it doesn't like pointer-events:none with Flash)</li> 
+ <li>Added a <code>fullscreenchange</code> event to Flash to better track events</li> 
+</ul>
+<p><em>2.6.0 (2011/12/27)</em></p> 
+<ul> 
+ <li>added major updates to Flash fullscreen mode controls [rmhall]</li> 
+ <li>added sneaky <code>pointer-events: none</code> to allow Flash to enter fullscreen in one clean click</li> 
+ <li>added missing CSS3 gradients syntaxes (kristerkari)[<a href="https://github.com/johndyer/mediaelement/pull/339">https://github.com/johndyer/mediaelement/pull/339</a>]</li> 
+ <li>added check for left offset to detect when mousedrag exceeds top boundary <a href="https://github.com/johndyer/mediaelement/pull/335">jmcneese</a> </li> 
+</ul>
+<p><em>2.5.0 (2011/12/15) - 56kb</em></p> 
+<ul> 
+ <li>Flash fullscreen now works on hover, so it's much easier to use. For Firefox it's always on, but for others <code>usePluginFullScreen:true</code> option</li> 
+ <li>For the audio player, Flash objects are positioned outside the main <code>&lt;div&gt;</code> which allows the player to be hidden without breaking flash</li> 
+ <li>Volume controls was adjusted slightly</li> 
+ <li>Removed Google translate features (Google killed the API)</li> 
+</ul>
+<p><em>2.4.3 (2011/12/10)</em></p> 
+<ul> 
+ <li>keyboard controls are now an array, allowing multiple keys to do the same thing</li> 
+ <li>support for Google TV keybuttons (based on above)</li> 
+ <li>arrow keys now move when paused</li> 
+ <li>floating time is now handled via JavaScript instead of CSS :hover (and removed from touch devices)</li> 
+</ul>
+<p><em>2.4.2 (2011/12/06) - 57.3kb</em></p> 
+<ul> 
+ <li>keyboard controls (up/down controls volume, left/right seeks, space play/pause, f goes fullscreen)</li> 
+ <li> <code>&lt;audio&gt;</code> now works with 100% for responsive layouts <a href="https://github.com/johndyer/mediaelement/issues/283">283</a> </li> 
+ <li>Support for auto start with class <code>mejs-player</code> and <code>data-mejsoptions</code> e.g. <code>&lt;video src=&quot;media.mp4&quot; class=&quot;mejs-player&quot; data-mejsoptions='{&quot;features&quot;:[&quot;playpause&quot;,&quot;progress&quot;,&quot;volume&quot;}, &quot;success&quot;: &quot;myCallback&quot;}'&gt;&lt;video&gt;</code> </li> 
+ <li>With multiple players on a page, when one starts the others pause (toggle <code>pauseOtherPlayers: true</code>) <a href="https://github.com/johndyer/mediaelement/issues/285">285</a> </li> 
+</ul>
+<p><em>2.4.1 (2011/12/05) - 55.7kb</em></p> 
+<ul> 
+ <li>Fixed fullscreen bug with Firefox (with Video for Everybody syntax) <a href="https://github.com/johndyer/mediaelement/issues/270">270</a> </li> 
+ <li>Added <code>remove()</code> method to <code>MediaElement</code> and <code>MediaElementPlayer</code> to safely remove Flash (from IE) <a href="https://github.com/johndyer/mediaelement/issues/111">111</a> </li> 
+ <li>Added a demo of MEJS skins to the /demo/ folder </li> 
+ <li>Closed issue with <code>ended</code> event in Flash (my example works) <a href="https://github.com/johndyer/mediaelement/issues/246">246</a> </li> 
+ <li>Flash has better support for <code>preload=&quot;auto&quot;</code> <a href="https://github.com/johndyer/mediaelement/issues/290">290</a> </li> 
+</ul>
+<p><em>2.4.0 (2011/11/28) - 54.9kb</em></p> 
+<ul> 
+ <li>Integration with YouTube API (and intial support for Vimeo API) : <a href="http://mediaelementjs.com/examples/?name=youtube">http://mediaelementjs.com/examples/?name=youtube</a> </li> 
+ <li>Catch when Google Translate fails due to API limits</li> 
+</ul>
+<p><em>2.3.3 (2011/11/21) - 49.4kb</em></p> 
+<ul> 
+ <li>removed volume controls for touch devices (Android and iOS require hardware volume)</li> 
+ <li>set a timeout to hide controls on touch devices</li> 
+ <li>fixed timecode bug with :09 (used radix)</li> 
+ <li>fixed bug when long videos end: (try/catch)</li> 
+ <li>fixed issue with <code>alwaysShowControls</code> </li> 
+ <li>removed a <code>console.log</code> in fullscreen that broke IE</li> 
+</ul>
+<p><em>2.3.2 (2011/11/12) 49.6kb</em></p> 
+<ul> 
+ <li>removed <code>http</code> from Flash and Silverlight embeds to support SSL</li> 
+ <li>fixed a possible bug when neither <code>src</code> nor <code>type</code> was specified</li> 
+ <li>turned off useCapture for a few events</li> 
+</ul>
+<p><em>2.3.1 (2011/11/07)</em></p> 
+<ul> 
+ <li>Another set of changes to handle various browser native fullscreen issues</li> 
+ <li>New control behavior for touch enabled devices (iPad, Android tablets)</li> 
+ <li>Bug fix for Flash (bradleyboy)</li> 
+</ul>
+<p><em>2.3.0 (2011/11/01) - 48.5kb</em></p> 
+<ul> 
+ <li>Fixed bug when fullscreen was called before play pressed</li> 
+ <li>Additional classes mejs-audio, mejs-video, mejs-ios, mejs-iphone, mejs-ipad, mejs-android added to contianing <code>&lt;div&gt;</code> for styles</li> 
+ <li>IE9 can't use <code>&lt;video width=&quot;100%&quot;&gt;</code> so you must use either options ({videoHeight:'100%'}) or inline style <code>&lt;video style=&quot;width:100%;height:100%;&quot;&gt;</code> </li> 
+ <li>updated fullscreen code for Safari (erktime)</li> 
+ <li>loading indicators shows during 'waiting' event</li> 
+ <li>iOS and Android now show &quot;big play&quot; button again (sometimes overlaps on iPhone)</li> 
+</ul>
+<p><em>2.2.5 (2011/10/14)</em></p> 
+<ul> 
+ <li>fix for Flash fallback in certain scenarios (IE RegExp problem, Firefox fullscreen Flash issue)</li> 
+ <li>adjustments for floating time indicator</li> 
+</ul>
+<p><em>2.2.4 (2011/10/10)</em></p> 
+<ul> 
+ <li>True FullScreen support in Firefox (nightly) and Chrome (Canary)</li> 
+ <li>more updates for 100% mode</li> 
+ <li>enableContextMenu(), disableContextMenu() methods</li> 
+ <li>change to poster code to let it be set later</li> 
+</ul>
+<p><em>2.2.3 (2011/10/07b) - 45.8kb</em></p> 
+<ul> 
+ <li>updated accessibility again for JAWS and NVDA (thanks to twitter.com/mohammed0204)</li> 
+ <li>added CSS class <code>&lt;html class=&quot;mejs-embed&quot;&gt;</code> for <code>&lt;iframe&gt;</code> embeds</li> 
+</ul>
+<p><em>2.2.2 (2011/10/07) - 45.8kb</em></p> 
+<ul> 
+ <li>added support for <del><code>&lt;video width=&quot;100%&quot; height=&quot;100%&quot;&gt;&lt;/video&gt;</code></del> <code>&lt;video style=&quot;width:100%;height:100%&quot;&gt;&lt;/video&gt;</code> (i.e. responsive/adaptive players)</li> 
+ <li>added :focus state for buttons to improve accessibility</li> 
+ <li>added title and aria-controls attributes to buttons to improve accessibility </li> 
+ <li>changed when loading circle appears (WebKit fires the 'loadstart' event differently than FF or IE)</li> 
+</ul>
+<p><em>2.2.1 (2011/10/06) - 44.1kb</em></p> 
+<ul> 
+ <li>fixed a bug with fullscreen that caused IE to completely mess up it layout</li> 
+ <li>fixed another bug with fullscreen and z-index</li> 
+</ul>
+<p><em>2.2.0 (2011/10/04)</em></p> 
+<ul> 
+ <li>controls now display on iPad, iPhone, and Android. Can be turned off using (iPadForceNativeControls:true)</li> 
+ <li>fullscreen support for iPad (different from true fullscreen on Safari 5.1)</li> 
+ <li>added frameaccurate timecode (via gselva)</li> 
+ <li>added contextmenu as a feature. if turned on the default includes: fullscreen toggle, mute toggle, and media download</li> 
+ <li>updated WebVTT support (still had some SRT formatting restrictions)</li> 
+ <li>dynamic player creation: from <code>&lt;a href=&quot;media.mp4&quot;&gt;video&lt;/a&gt;</code> and <code>&lt;div class=&quot;mejs&quot;&gt;&lt;/div&gt;</code> specifying type (string or array)</li> 
+ <li>Fixed bug where Flash couldn't go fullscreen with track chapters</li> 
+ <li>fixed a bug with Flash fullscreen ratios</li> 
+ <li>controls now disappear on timeout when mouse is idle (useful for fullscreen)</li> 
+ <li>enableControls() and disableControls() (for pre/post roll scenarios)</li> 
+ <li>added an autoplay override (especially for WebKit browsers)</li> 
+ <li>fixed functionality of mute toggling</li> 
+ <li>reorganized plugins to use $.extend</li> 
+ <li>updating functionality of loading graphic to account for various browser inconsistencies (loadstart event)</li> 
+</ul>
+<p><em>2.1.9 (2011/08/04) - 36.9kb</em></p> 
+<ul> 
+ <li>fixed Android 2.1 and 2.2 playing problems (still need a good 2.3 and 3.0 device. hint. hint.)</li> 
+</ul>
+<p><em>2.1.8 (2011/08/03) - 36.9kb</em></p> 
+<ul> 
+ <li>True fullscreen for Safari 5.1</li> 
+ <li>Flash/Silverlight fullscreen is now &quot;full window&quot; (except for Firefox which cannot handle adjusting Flash without reloading it)</li> 
+</ul>
+<p><em>2.1.7 (2011/07/19) - 35.9kb</em></p> 
+<ul> 
+ <li>fixed mute button (kaichen)</li> 
+ <li>added alwaysShowControls option (kaichen)</li> 
+ <li>forceful padding override on buttons</li> 
+ <li>started &quot;ender&quot; branch to experiment with removing jQuery dependency and baking in ender.js</li> 
+ <li>updated the use of <code>type</code> javascript option with src is present</li> 
+ <li>remove preload=&quot;none&quot; hack for Chrome now that it supports it (note: Chrome still strangely fires a 'loadstart' event)</li> 
+ <li>added hooks for other jQuery compatible libraries like <a href="http://enderjs.com">ender.js</a> </li> 
+ <li>Wordpress: if you don't specify a file extension, mejs will look for attached files and use them [video src=&quot;/wp-content/uploads/myfile&quot;]</li> 
+ <li>Wordpress: option to select a 'skin'</li> 
+ <li>Wordpress: option to select audio width/height</li> 
+</ul>
+<p><em>2.1.6 (2011/06/14) - 35.5kb</em></p> 
+<ul> 
+ <li>fix errors when the progress bar isn't present</li> 
+ <li>buttons are now actual <code>&lt;button&gt;</code> tags which allows tabbed controls (for better accessibility and possible ARIA support)</li> 
+ <li>fix problems with low volume in Flash on startup (startVolume was sometimes 0!)</li> 
+ <li>updated a few places to use jQuery 1.6's new prop/attr methods</li> 
+ <li>updated skins to account for new <code>&lt;button&gt;</code> (still need highlighted style)</li> 
+</ul>
+<p><em>2.1.5 (2011/05/28) - 35.2kb</em></p> 
+<ul> 
+ <li>minor fix for controls not showing time or duration</li> 
+ <li>when switching files, the Flash plugin now forcibly stops downliading</li> 
+</ul>
+<p><em>2.1.4 (2011/05/20) - 35.2kb</em></p> 
+<ul> 
+ <li>fixed display of hours</li> 
+ <li>fixed Flash audio bug where pausing when the file wasn't fully loaded would cause the progress bar to go offscreen</li> 
+ <li>fixed Flash video bug where percent loaded was always 100%</li> 
+ <li>fixed Flash audio bug where pressing pause, then play would always restart playback from the beginning</li> 
+ <li>startVolume works more clearly in plugins (esp. Opera and Linux)</li> 
+ <li>tracks support no longer refers to WebSRT, but is more generic for WebVTT (not all features of WebVTT are supported yet)</li> 
+ <li>fixed fullscreen in Safari OS X 10.5 (which doens't really support true fullscreen)</li> 
+ <li>Flash and Silverlight can now start downloading if preload=&quot;auto&quot; or preload=&quot;metadata&quot; (warning: preload=&quot;metadata&quot; will load the entire thing)</li> 
+</ul>
+<p><em>2.1.3 (2011/04/12) - 35.8kb</em></p> 
+<ul> 
+ <li>added support for hours in time format (00:00:00) and an alwaysShowHours option to force hours to always show</li> 
+ <li>removed some duplicate flash events</li> 
+ <li>added 'seeking' event to Flash/SL (already had 'seeked')</li> 
+</ul>
+<p><em>2.1.2 (2011/03/23) - 34.4kb</em></p> 
+<ul> 
+ <li>fixed IE6 and IE7 caption position</li> 
+ <li>fixed IE7 failure in certain places</li> 
+ <li>changed browser UA detection to use only lowercase (iPhone iphone)</li> 
+ <li>fixed Flash audio loaded bug (reporting 0 after loaded)</li> 
+ <li>added removeEventListener to shims</li> 
+ <li>new rail-resizing code</li> 
+</ul>
+<p><em>2.1.1 (2011/03/07) - 33.5kb</em></p> 
+<ul> 
+ <li>added 'loadeddata' event to Flash and Silverlight</li> 
+ <li>switched to flashvars parameter to support Apache's mod_security</li> 
+ <li>better flash fullscreen support</li> 
+ <li>added flv-x to flash's accepted types</li> 
+ <li>Fixed a bug in poster sizing (only affected IE)</li> 
+ <li>added &quot;isFullScreen&quot; property to media objects (like Safari's webkitDisplayingFullscreen)</li> 
+ <li>controls start hidden with autoplay</li> 
+ <li>fixed iOS loading issues (success wasn't firing, other errors)</li> 
+ <li>fixed IE6 when using new MediaElementPlayer(), rather than jQuery</li> 
+</ul>
+<p><em>2.1.0 (2011/02/23) - 32.9kb</em></p> 
+<ul> 
+ <li>Updated control styles for a cleaner look</li> 
+ <li>Added loadeddata and canplay events to Flash and Silverlight</li> 
+ <li>Added loading indicator to MediaElementPlayer</li> 
+ <li>Added stop button (pause, then return to currentTime:0)</li> 
+ <li>IE6/7 CSS updates</li> 
+ <li>Poster is now forced to the size of the player (could be updated to be proportional if someone wants to add that)</li> 
+ <li>Updated Flash ended event to account for buffering weirdness</li> 
+ <li>Fixed a track text hovering problem</li> 
+</ul>
+<p><em>2.0.7 (2011/02/13) - 31.9kb</em></p> 
+<ul> 
+ <li>Added 'mode' option to force native (HTML5) or shim (Flash,Silverlight) modes</li> 
+ <li>Fixed audio seeking bug in Flash (thanks Andy!)</li> 
+ <li>Fixed startVolume not working in Flash</li> 
+ <li>Overrided Chrome's autoplay since it doesn't always work</li> 
+</ul>
+<p><em>2.0.6 (2011/02/04) - 31.7kb</em></p> 
+<ul> 
+ <li>Whitespace cleanup on files</li> 
+ <li>Preventing flash/sl plugins from reinitializing when they are removed by another script</li> 
+ <li>Fixed IE JavaScript errors in Flash fallback (seen in Wordpress)</li> 
+ <li>Added 'play' event to Silverlight to prevent errors</li> 
+</ul>
+<p><em>2.0.5 (2011/01/25) - 31.7kb</em></p> 
+<ul> 
+ <li>Added error object to player</li> 
+ <li>Adjusted popup timer and progress bar</li> 
+ <li>Fixed media URL escaping</li> 
+ <li>Stopped sending poster to plugin</li> 
+ <li>Silverlight culture update</li> 
+ <li>Added back reference check (also makes jQuery usage easier)</li> 
+ <li>Added stop() function to mediaelement</li> 
+ <li>timerupdate still fires when paused (plugins)</li> 
+ <li>Added Security.allowDomain(&quot;*&quot;) to Flash so it can be used on different domains</li> 
+ <li>Fixed progress bar for Firefox 3 with Ogg files</li> 
+ <li>Prevented Flash from re-creating the player when show/hide restarts it</li> 
+ <li>Fixed initial volume level in non-HTML5 players</li> 
+ <li>Made PNG8 versions of controls images (for IE6)</li> 
+</ul>
+<p><em>2.0.4 (2011/01/14) - 31.2kb</em></p> 
+<ul> 
+ <li>Fixed a major bug in plugin detection.</li> 
+</ul>
+<p><em>2.0.3 (2011/01/13) - 31.2kb</em></p> 
+<ul> 
+ <li>changed IE Flash insertion to include me-plugin CSS class</li> 
+ <li>changed player error handling</li> 
+ <li>fixed a bug in the Silverlight player related to URLs</li> 
+</ul>
+<p><em>2.0.2 (2010/12/31) - 31.1kb</em></p> 
+<ul> 
+ <li>Changed HTML escape method to encodeURICompnent</li> 
+ <li>Flash-based RMTP support (contributor: sylvinus)</li> 
+ <li>Fixed Wordpress loop bug</li> 
+ <li>Changed time popup to move with mouse instead of currentTime</li> 
+ <li>added enablePluginSmoothing (Flash)</li> 
+ <li>Added some &quot;play&quot; &quot;playing&quot; event duplication to Flash</li> 
+</ul>
+<p><em>2.0.1 (2010/12/20) - XX.Xkb</em></p> 
+<ul> 
+ <li>Changed Flash to allow cross domain video</li> 
+ <li>Added 'click' event to Flash and Silverlight</li> 
+ <li>Updated autoplay attribute detection</li> 
+</ul>
+<p><em>2.0.0 (2010/12/13) - 30.8kb</em></p> 
+<ul> 
+ <li>Reorganized MediaElementPlayer code to allow each button to become a pluggable feature that can be removed or overrided</li> 
+ <li>Enabled a no JavaScript version to support Video for Everybody nested syntax (optional)</li> 
+ <li>Enabled drag on progress bar</li> 
+ <li>Preload=&quot;none&quot; is default for Flash and Silverlight</li> 
+ <li>Preload=&quot;none&quot; enabled on Google Chrome</li> 
+ <li>Added skins to download</li> 
+ <li>Support for skin swapping</li> 
+ <li>Updated volume handle controls</li> 
+ <li>Update progress controls display</li> 
+ <li>Exposed MediaElement API methods on player</li> 
+ <li>Adjusted layout for IE6</li> 
+</ul>
+<p><em>1.1.7 (2010/11/29) - 29.8kb</em></p> 
+<ul> 
+ <li>Fixed bug with <code>&lt;track&gt;</code> loading on <code>&lt;audio&gt;</code> player</li> 
+</ul>
+<p><em>1.1.6 (2010/11/23) - 29.8kb</em></p> 
+<ul> 
+ <li>Chapters support <code>&lt;track kind=&quot;chapters&quot; /&gt;</code> </li> 
+</ul>
+<p><em>1.1.5 (2010/11/21) - 29.8kb</em></p> 
+<ul> 
+ <li>Workaround for IE issues when accidentally placed inside <code>&lt;p&gt;</code> tag</li> 
+ <li>Fixed silverlight pause state reporting</li> 
+ <li>Switched back to Flash as default</li> 
+ <li>Removed requirement for Google translate API <code>&lt;script&gt;</code> (direct JSONP call)</li> 
+ <li>Added googleApiKey option</li> 
+</ul>
+<p><em>1.1.4 (2010/11/21) - 29.5kb</em></p> 
+<ul> 
+ <li>Added Default volume level to options (0.8)</li> 
+ <li>Fix for IE volume slider positioning</li> 
+ <li>Fix for IE tracks parsing (replacement String.split)</li> 
+ <li>Changed namespace from html5 to mejs</li> 
+ <li>Remove all showMessage references</li> 
+ <li>Controls show again after playback ends</li> 
+</ul>
+<p><em>1.1.3 (2010/11/20) - 29.0kb</em></p> 
+<ul> 
+ <li>Change to fallback mechanism and styling (Windows Phone 7)</li> 
+</ul>
+<p><em>1.1.2 (2010/11/19) - 28.9kb</em></p> 
+<ul> 
+ <li>Removed messages, added big play button</li> 
+ <li>Google translate now supports more than 1000 characters</li> 
+ <li>Added a dropdownlist of languages from which the user can select</li> 
+ <li>Added timerUpdate option to set the millisecond speed of timeupdate events</li> 
+ <li>Updated the media file and examples</li> 
+</ul>
+<p><em>1.1.1 (2010/11/18) - 27.1kb</em></p> 
+<ul> 
+ <li>added captioning support via the <code>&lt;track&gt;</code> tag (thanks to <a href="http://www.delphiki.com/html5/playr">Playr</a> for the example)</li> 
+ <li>added auto-translation support via Google translate API</li> 
+</ul>
+<p><em>1.1.0 (2010/11/17) - 22.6kb</em></p> 
+<ul> 
+ <li>Total re-oganization of MediaElement, MediaElementPlayer, and supporting objects</li> 
+ <li>Updated CSS to a cleaner look, with better IE support &amp; big play button</li> 
+ <li>Simplified all plugin and version detection</li> 
+ <li>Added loop option (useful for audio files)</li> 
+ <li>Added the ability to turn each control button on/off</li> 
+ <li>Added canPlayType to PluginMediaElement</li> 
+ <li>Updated setSrc to take multiple sources</li> 
+</ul>
+<p><em>1.0.7 (2010/11/16) - 18.15kb</em></p> 
+<ul> 
+ <li>Total re-oganization of MediaElement code</li> 
+ <li>JSLint compliant, YUI compliant</li> 
+</ul>
+<p><em>1.0.6 (2010/11/15) - 17.96kb</em></p> 
+<ul> 
+ <li>Rebuilt PluginDetection (removed SWFObject and Microsoft code)</li> 
+ <li>More JSLint compatible (still a few iterations to get there)</li> 
+ <li>Added jQuery 1.4.4</li> 
+</ul>
+<p><em>1.0.5 (2010/11/10 later on)</em></p> 
+<ul> 
+ <li>Fixed a problem with the *.min.js files</li> 
+ <li>Added jQuery 1.4.3</li> 
+</ul>
+<p><em>1.0.4 (2010/11/10) - 18.32kb</em></p> 
+<ul> 
+ <li>Fixed Flash display when <code>&lt;video&gt;</code> did not match actual dimensions</li> 
+ <li>autosizing in Flash and Silverlight</li> 
+ <li>added options for defaultVideoWidth, defaultVideoHeight when <code>&lt;video&gt;</code> <code>height</code> and <code>width</code> are not set</li> 
+ <li>included minified versions using YUI compressor</li> 
+</ul>
+<p><em>1.0.3 (2010/09/24)</em></p> 
+<ul> 
+ <li>changes in poster handling</li> 
+ <li>fix IE9 startup bug (its 'play' event fires wrongly it seems)</li> 
+ <li>fixed Flock, Opera sizing bugs</li> 
+ <li>fixed audio ended bug in special cases under Flash</li> 
+ <li>added default height/width when they are not specified in attributes</li> 
+</ul>
+<p><em>1.0.2 (2010/09/17)</em></p> 
+<ul> 
+ <li>minor updates to support IE9 beta1</li> 
+</ul>
+<p><em>1.0.1 (2010/09/13)</em></p> 
+<ul> 
+ <li>added native fullscreen support for Safari 5 (via webkitEnterFullScreen)</li> 
+</ul>
+<p><em>1.0.0 (2010/08/09)</em></p> 
+<ul> 
+ <li>initial release</li> 
+</ul>
+<h3> <a name="user-content-todo" class="anchor" href="..md.html#todo"><span class="octicon octicon-link"></span></a>TODO</h3> 
+<p>2.x features</p> 
+<ul> 
+ <li>HTML5 error handling</li> 
+ <li>Flash/SL error codes</li> 
+ <li>Postroll</li> 
+ <li>Flash StageVideo?</li> 
+</ul>
+<p><em>Someday/Maybe features</em></p> 
+<ul> 
+ <li>deeper WebVTT support (alignment, color, etc.) - include captionator</li> 
+ <li>Full support for Ender.js, including mediaelement-and-player-standalone which includes ender.</li> 
+ <li>thin line when controls are off</li> 
+ <li>system-wide events</li> 
+ <li>Ogg/Theora playback</li> 
+ <li>Better alignment with native MediaElement (using shimichanga.com techniques)</li> 
+</ul>
+</body>
+</html>

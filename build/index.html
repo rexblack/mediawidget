@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>3pjs-skeleton</title>
+    <title>mediawidget</title>
   </head>
   <body>
     <h1>This is an example of embedding a 3pjs-app</h1>
     <p>You should see 'Hello World!' below this line</p>
-    <script src="mediawidget.js" data-hello="Hello World!"></script>
+    
+    <script src="player.js" 
+      data-src="http://www.streambox.fr/playlists/test_001/stream.m3u8"
+      data-type="application/x-mpegURL"></script>
+    
   </body>
 </html>

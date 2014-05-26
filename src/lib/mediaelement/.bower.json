@@ -1,0 +1,13 @@
+{
+  "name": "mediaelement",
+  "homepage": "https://github.com/rexblack/mediaelement",
+  "_release": "93b51aa4e1",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "93b51aa4e1db24306a125b529adcf4cb32e9879f"
+  },
+  "_source": "https://github.com/rexblack/mediaelement.git",
+  "_target": "master",
+  "_originalSource": "https://github.com/rexblack/mediaelement.git"
+}

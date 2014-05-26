@@ -1,16 +1,25 @@
 
-style/main.css
+lib/mediaelement/build/mediaelementplayer.css
 ----------------
-style/main.css
+lib/mediaelement/build/mediaelementplayer.css
 
-mediawidget.js
+lib/mediaelement/build/mediaelementplayer.min.css
+----------------
+lib/mediaelement/build/mediaelementplayer.min.css
+
+lib/mediaelement/build/mejs-skins.css
+----------------
+lib/mediaelement/build/mejs-skins.css
+
+player.js
 ----------------
 lib/requirejs/require.js
 lib/elopts/build/elopts.js
 lib/jquery/dist/jquery.js
+lib/mediaelement/build/mediaelement-and-player.js
 lib/require-css/normalize.js
 lib/require-css/css.js
-css!style/main
+css!lib/mediaelement/build/mediaelementplayer
 app.js
 lib/requirejs-initscript/build/initscript.js
 main.js
