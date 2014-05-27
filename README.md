@@ -3,7 +3,7 @@ mediawidget
 
 > A 3pjs-mediaplayer built upon [requirejs](http://requirejs.org) and [mediaelement.js](http://mediaelementjs.com/).
 
-Based on [3pjs-skeleton](http://github.com/benignware/3pjs-skeleton).
+Based on [3pjs-skeleton](http://github.com/rexblack/3pjs-skeleton).
 
 To provide hls-support, it is using a fork by mangui which integrates [hls-provider](https://github.com/mangui/HLSprovider).
 This has been [forked](http://github.com/rexblack/mediaelement) to get flash-media-bridge globally namespaced. 
