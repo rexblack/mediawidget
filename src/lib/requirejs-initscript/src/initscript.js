@@ -43,6 +43,8 @@
       var baseUrl = cleanSrc(req.toUrl(''));
       var filename = baseUrl ? baseUrl + "/" + name + ".js" : name + ".js";
       
+      
+      
       for (var i = 0, script; script = scripts[i]; i++) {
         
         var match = null, src = null;
@@ -54,6 +56,8 @@
         }
         
         src = cleanSrc(script.getAttribute('src'));
+        
+        console.log("filename: ", src);
         
         if (filename == src) {
           match = script;
@@ -81,6 +85,7 @@
           
           name = config.deps && config.deps.length ? config.deps[0] : null;
 
+          
           if (!name) {
             name = module.config().name;
           }

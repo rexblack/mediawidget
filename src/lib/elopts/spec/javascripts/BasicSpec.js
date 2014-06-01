@@ -25,5 +25,9 @@ describe("Basic", function() {
   it("options.param2 should return 'test4'", function() {
     expect(options.param2 === "test4").toBeTruthy();
   });
+  
+  it("options.query should return 'param1=test4&param2=test4'", function() {
+    expect(options.query === 'param1=test4&param2=test4').toBeTruthy();
+  });
 
 });

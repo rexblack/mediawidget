@@ -158,7 +158,7 @@ module.exports = function(grunt) {
     'css_wrap:compile', 
     'css_datauri', 
     'requirejs:compile',
-    'uglify',  
+    //'uglify',  
     //'clean:tmp'
   ]);
 };

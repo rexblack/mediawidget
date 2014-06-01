@@ -1,11 +1,11 @@
 {
   "name": "elopts",
   "homepage": "https://github.com/benignware/elopts.js",
-  "_release": "77b92026d0",
+  "_release": "e8d2728b1c",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "77b92026d0ac903dece9317fc59314490aee30ea"
+    "commit": "e8d2728b1cdeff2f9d0614107c9c3aeee20c14bd"
   },
   "_source": "https://github.com/benignware/elopts.js.git",
   "_target": "*",

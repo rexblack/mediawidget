@@ -7,7 +7,8 @@
   
   require.config(
     {
-      baseUrl: 'http://3pjs.benignware.com/mediawidget/', 
+      //baseUrl: 'http://3pjs.benignware.com/mediawidget/', 
+      baseUrl: 'http://3pjs.benignware.com/mediawidget/',
       paths: {
         initscript: 'lib/requirejs-initscript/build/initscript', 
         css: 'lib/require-css/css', 
@@ -31,7 +32,7 @@
     
     mejs.MediaElementDefaults.pluginVars = "bridge=mejs_mediawidget.MediaPluginBridge";
     mejs.MediaElementDefaults.pluginPath = require.toUrl('lib/mediaelement/build/');
-    
+    console.log("mejs pluginpath: ",  mejs.MediaElementDefaults.pluginPath); 
     return mejs;
   });
   
@@ -41,6 +42,7 @@
     // cache-bust the src to make it call every time the script executes
     require(['initscript!' + new Date().getTime() + Math.random() * 10000000000000000], function(initscript) {
       
+      console.log("init app: ", initscript);
       // bootstrap app
       var options = elopts(initscript);
       var element = document.createElement('div');

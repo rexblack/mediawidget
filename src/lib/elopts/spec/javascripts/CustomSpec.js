@@ -13,7 +13,8 @@ describe("Custom", function() {
     json: false, 
     dataset: false, 
     cdata: false, 
-    params: false
+    params: false, 
+    query: false
   })(element);
   
   it("options.option should not return 'test1'", function() {
@@ -30,6 +31,10 @@ describe("Custom", function() {
   
   it("options.param2 should not return 'test4'", function() {
     expect(options.param2 === "test4").not.toBeTruthy();
+  });
+  
+  it("options.query should not return 'param1=test4&param2=test4'", function() {
+    expect(options.query === 'param1=test4&param2=test4').not.toBeTruthy();
   });
 
 });

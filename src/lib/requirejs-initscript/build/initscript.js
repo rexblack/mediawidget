@@ -22,6 +22,7 @@
       }
       string = string.replace(new RegExp("\^\(" + origin + "\)", "ig"), '');
       string = string.split("?")[0];
+      string = string.replace(/^\/+/, "");
     }
     return string;
   }
@@ -33,8 +34,6 @@
     var initialized = [];
   
     
-    
-    
     function matchScripts(name) {
       
       var matches = [];
@@ -42,6 +41,7 @@
       
       var baseUrl = cleanSrc(req.toUrl(''));
       var filename = baseUrl ? baseUrl + "/" + name + ".js" : name + ".js";
+      filename = cleanSrc(filename);      
       
       for (var i = 0, script; script = scripts[i]; i++) {
         
@@ -54,6 +54,8 @@
         }
         
         src = cleanSrc(script.getAttribute('src'));
+        
+        console.log("filename: ", filename, src);
         
         if (filename == src) {
           match = script;
@@ -81,6 +83,7 @@
           
           name = config.deps && config.deps.length ? config.deps[0] : null;
 
+          
           if (!name) {
             name = module.config().name;
           }

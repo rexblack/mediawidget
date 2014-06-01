@@ -23,7 +23,12 @@ var elopts = (function() {
     }).slice(1);
   };
   
-  // parse query parameters from a string
+  // parse query-string from url
+  function queryString(url) {
+    return url.split("?")[1];
+  }
+  
+  // parse query-parameters from a string
   // adopted from: http://stackoverflow.com/questions/18022683/how-to-access-request-query-string-parameters-in-javascript
   // TODO: recursively parse query object syntax: object[key]=value etc.
   function queryParams(url) {
@@ -86,9 +91,9 @@ var elopts = (function() {
   
   // parses a data-section containing json from an element
   function cdataJson( element ) {
-    var string = element.textContent.replace(/^\s*<\!\[CDATA\[/m, "").replace(/\]\]>\s*$/m, "");
-    var json = null;
-    if (string) {
+    var json = null, string = element.textContent;
+    if (string.match(/\s*<\!\[CDATA\[/)) {
+      string = string.replace(/^\s*<\!\[CDATA\[\s*/m, "").replace(/\]\]>\s*$/m, "");
       try {
         json = JSON.parse(string);
       } catch (e) {
@@ -115,10 +120,16 @@ var elopts = (function() {
       
       result = {};
       
+      
+      
       if (object.nodeType == 1) {
         // dom-element
         
         var src = object.getAttribute('src');
+        
+        if (this.options.query) {
+          result[this.options.queryName] = queryString(src);
+        }
         
         if (this.options.params && src != null) {
           // parse query params from src-attribute
@@ -130,9 +141,13 @@ var elopts = (function() {
           result = deepExtend(result, dataset(object));
         }
         
-        if (this.options.cdata) {
+        if (this.options.cdata && !result[this.options.cdataName]) {
           // cdata-json
-          result[this.options.cdataName] = result[this.options.cdataName] || cdataJson(object);
+          
+          var json = cdataJson(object);
+          if (json) {
+            result[this.options.cdataName] = json;
+          }
         }
         
       } else if (typeof object == 'object' && !object.nodeType) {
@@ -169,7 +184,9 @@ var elopts = (function() {
     dataset: true, 
     cdata: true, 
     cdataName: 'data', 
-    params: true
+    params: true, 
+    query: true, 
+    queryName: "query"
   };
   
   // helper plugin
