@@ -3,6 +3,8 @@ define(['jquery', 'mejs'], function($, mejs) {
   // you may use $ in here
   function App(element, options) {
     // init app
+    
+    console.log("INIT MEDIA ELEMENT: ", mejs);
     //
     var mediaelement = document.createElement('video');
     $(mediaelement).attr('id', 'player');
@@ -20,6 +22,7 @@ define(['jquery', 'mejs'], function($, mejs) {
     $(element).append(mediaelement);
     
     options.src = undefined;
+    delete options.src;
     
     var player1 = new mejs.MediaElementPlayer(mediaelement, options);
     

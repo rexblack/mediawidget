@@ -807,7 +807,7 @@ mejs.MediaPluginBridge = {
 	// receives events from Flash/Silverlight and sends them out as HTML5 media events
 	// http://www.whatwg.org/specs/web-apps/current-work/multipage/video.html
 	fireEvent: function (id, eventName, values) {
-
+    
 		var
 			e,
 			i,
@@ -911,6 +911,8 @@ mejs.MediaElement = function (el, o) {
 mejs.HtmlMediaElementShim = {
 
 	create: function(el, o) {
+	  
+	  
 		var
 			options = mejs.MediaElementDefaults,
 			htmlMediaElement = (typeof(el) == 'string') ? document.getElementById(el) : el,
@@ -941,6 +943,8 @@ mejs.HtmlMediaElementShim = {
 		playback.url = (playback.url !== null) ? mejs.Utility.absolutizeUrl(playback.url) : '';
 
 		if (playback.method == 'native') {
+		  
+		  
 			// second fix for android
 			if (mejs.MediaFeatures.isBustedAndroid) {
 				htmlMediaElement.src = playback.url;
@@ -1047,13 +1051,21 @@ mejs.HtmlMediaElementShim = {
 				result.htmlMediaElement = htmlMediaElement = dummy;
 			}
 				
-			for (i=0; i<mediaFiles.length; i++) {
+			for (i=0; i < mediaFiles.length; i++) {
 				// normal check
+				
+				// special case in desktop safari which answers 'maybe' but cannot play
+				if (!mejs.MediaFeatures.isiOS && !mejs.MediaFeatures.isAndroid && mediaFiles[i].type === 'application/x-mpegURL' && htmlMediaElement.canPlayType(mediaFiles[i].type) === 'maybe') {
+				  continue;
+				} 
+				
 				if (htmlMediaElement.canPlayType(mediaFiles[i].type).replace(/no/, '') !== '' 
 					// special case for Mac/Safari 5.0.3 which answers '' to canPlayType('audio/mp3') but 'maybe' to canPlayType('audio/mpeg')
 					|| htmlMediaElement.canPlayType(mediaFiles[i].type.replace(/mp3/,'mpeg')).replace(/no/, '') !== ''
 					// special case for m4a supported by detecting mp4 support
 					|| htmlMediaElement.canPlayType(mediaFiles[i].type.replace(/m4a/,'mp4')).replace(/no/, '') !== '') {
+					  
+					  
 					result.method = 'native';
 					result.url = mediaFiles[i].url;
 					break;
